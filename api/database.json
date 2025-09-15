@@ -1,0 +1,483 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Roland",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 2,
+      "name": "Moog",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 3,
+      "name": "Sequential Circuits",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 4,
+      "name": "Yamaha",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 5,
+      "name": "Korg",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 6,
+      "name": "ARP Instruments",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 7,
+      "name": "Oberheim",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 8,
+      "name": "Electronic Music Studios",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 9,
+      "name": "Palm Products GmbH ",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 10,
+      "name": "Waldorf",
+      "bio": "",
+      "email": "",
+      "imgUrl": ""
+    },
+    {
+      "id": 11,
+      "name": "James Heaton",
+      "bio": "I like synths.",
+      "email": "jheaton@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 12,
+      "name": "Frederick Frick",
+      "bio": "I am a musical gnome, and I think that really sets me apart.",
+      "email": "ffrick@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 13,
+      "name": "Admiral Whip Babbit",
+      "bio": "Currently investigating submarine sandwich protocols for the maritime division.",
+      "email": "awbabbit@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 14,
+      "name": "Juan Friend",
+      "bio": "UPS driver specializing in historically significant hair deliveries.",
+      "email": "jfriend@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 15,
+      "name": "Schneider Webb",
+      "bio": "Professional swamp donkey wrangler.",
+      "email": "swebb@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 16,
+      "name": "Max Braxton",
+      "bio": "Professional problem solver with experience in customer service escalation.",
+      "email": "mbraxton@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 17,
+      "name": "Twinkie Glidden",
+      "bio": "Quality assurance specialist in the snack food industry with very high standards.",
+      "email": "tglidden@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 18,
+      "name": "Guido Frisbee",
+      "bio": "Recreational sports enthusiast with a passion for disc-based activities.",
+      "email": "gfrisbee@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 19,
+      "name": "Felix Babakuntos",
+      "bio": "I work in hospitality and believe in maintaining the highest standards of service. Interested in windswept looks.",
+      "email": "fbabakuntos@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 20,
+      "name": "Maurice Majesty",
+      "bio": "Certified in advanced mule battle techniques and banana boat safety protocols.",
+      "email": "mmajesty@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 21,
+      "name": "Otis King",
+      "bio": "King of R&B. My new song “Triple Check” is available at record stores nationwide.",
+      "email": "oking@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 22,
+      "name": "Dugan Nash",
+      "bio": "Certified in advanced mule battle techniques and banana boat safety protocols.",
+      "email": "dnash@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 23,
+      "name": "Orville Sash",
+      "bio": "Interested in entering into a gentleman's agreement with ye.",
+      "email": "osash@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 24,
+      "name": "Merlin Mumford",
+      "bio": "I practice various forms of mystical arts while maintaining a practical business sense.",
+      "email": "mmumford@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 25,
+      "name": "Chaplin Schumacher",
+      "bio": "Religious counselor who also dabbles in automotive repair and maintenance.",
+      "email": "cschumacher@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 26,
+      "name": "Nuno Gloop",
+      "bio": "I specialize in viscous liquid distribution and have strong opinions about consistency.",
+      "email": "ngloop@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 27,
+      "name": "Smiley Lynch",
+      "bio": "I maintain a positive attitude even in the most challenging customer service situations.",
+      "email": "slynch@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 28,
+      "name": "Ewan Rump",
+      "bio": "Anatomical consultant with expertise in posterior-related matters and concerns.",
+      "email": "erump@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 29,
+      "name": "Mummy Napkin",
+      "bio": "Ancient preservation specialist currently working in the paper goods industry.",
+      "email": "mnapkin@nss.com",
+      "imgUrl": ""
+    },
+    {
+      "id": 30,
+      "name": "Dick Fortune",
+      "bio": "Financial advisor who believes strongly in the power of positive thinking and luck.",
+      "email": "dfortune@nss.com",
+      "imgUrl": ""
+    }
+  ],
+  "synths": [
+    {
+      "id": 1,
+      "name": "TB-303",
+      "userId": 1,
+      "characteristicId": 5,
+      "description": "Originally marketed as a bass accompaniment tool, the TB-303 became the cornerstone of acid house music thanks to its resonant, chirpy filter sweeps.",
+      "yearMade": 1981,
+      "imgUrl": "",
+      "trackExample": "“Acid Tracks” - Phuture"
+    },
+    {
+      "id": 2,
+      "name": "Minimoog Model D",
+      "userId": 2,
+      "characteristicId": 2,
+      "description": "The definitive monophonic analog synth - prized for its deep basses, soaring leads, and smooth filter. A staple in classic rock, funk, and beyond.",
+      "yearMade": 1970,
+      "imgUrl": "",
+      "trackExample": "“Flash Light” - Parliament"
+    },
+    {
+      "id": 3,
+      "name": "Prophet-5",
+      "userId": 3,
+      "characteristicId": 3,
+      "description": "The first fully programmable polyphonic analog synth - helped shape the sound of '80s pop and electronic.",
+      "yearMade": 1978,
+      "imgUrl": "",
+      "trackExample": "“Thriller” - Michael Jackson"
+    },
+    {
+      "id": 4,
+      "name": "Juno-106",
+      "userId": 1,
+      "characteristicId": 12,
+      "description": "A 6-voice analog poly with signature chorus - favored for pads, brass, and bass in pop and electronic music.",
+      "yearMade": 1984,
+      "imgUrl": "",
+      "trackExample": "“Don't You Forget About Me” - Simple Minds"
+    },
+    {
+      "id": 5,
+      "name": "DX7",
+      "userId": 4,
+      "characteristicId": 4,
+      "description": "The first commercially successful digital FM synth - famous for its electric pianos and bell tones.",
+      "yearMade": 1983,
+      "imgUrl": "",
+      "trackExample": "Take On Me” - a-ha"
+    },
+    {
+      "id": 6,
+      "name": "Jupiter-8",
+      "userId": 1,
+      "characteristicId": 6,
+      "description": "Roland's flagship polyphonic synth - prized for its wide pads, brassy leads, and lush layering.",
+      "yearMade": 1981,
+      "imgUrl": "",
+      "trackExample": "“Save a Prayer” - Duran Duran"
+    },
+    {
+      "id": 7,
+      "name": "M1",
+      "userId": 5,
+      "characteristicId": 7,
+      "description": "A digital workstation famous for the “M1 Piano” and organ - foundational in house and dance music.",
+      "yearMade": 1988,
+      "imgUrl": "",
+      "trackExample": "“Show Me Love” - Robin S."
+    },
+    {
+      "id": 8,
+      "name": "Odyssey",
+      "userId": 6,
+      "characteristicId": 8,
+      "description": "A duophonic analog synth loved for its expressive character - used in funk and fusion.",
+      "yearMade": 1972,
+      "imgUrl": "",
+      "trackExample": "“Chameleon” - Herbie Hancock"
+    },
+    {
+      "id": 9,
+      "name": "OB-Xa",
+      "userId": 7,
+      "characteristicId": 9,
+      "description": "A massive-sounding analog polysynth famous for its brass stabs and huge pads.",
+      "yearMade": 1980,
+      "imgUrl": "",
+      "trackExample": "“Jump” - Van Halen"
+    },
+    {
+      "id": 10,
+      "name": "MS-20",
+      "userId": 5,
+      "characteristicId": 10,
+      "description": "A semi-modular mono synth known for its filthy filters and patching capabilities.",
+      "yearMade": 1978,
+      "imgUrl": "",
+      "trackExample": "“Da Funk” - Daft Punk"
+    },
+    {
+      "id": 11,
+      "name": "SH-101",
+      "userId": 1,
+      "characteristicId": 15,
+      "description": "A compact mono synth loved for punchy bass and lead sounds - often used live",
+      "yearMade": 1982,
+      "imgUrl": "",
+      "trackExample": "“Blue Monday” - New Order"
+    },
+    {
+      "id": 12,
+      "name": "TR-808",
+      "userId": 1,
+      "characteristicId": 11,
+      "description": "Not a synth per se, but a programmable analog drum machine whose bass drum became legendary in hip-hop and dance music.",
+      "yearMade": 1980,
+      "imgUrl": "",
+      "trackExample": "“Planet Rock” - Afrika Bambaataa"
+    },
+    {
+      "id": 13,
+      "name": "D-50",
+      "userId": 1,
+      "characteristicId": 12,
+      "description": "Combined samples with synthesis to produce complex, evolving sounds - perfect for '80s ballads.",
+      "yearMade": 1987,
+      "imgUrl": "",
+      "trackExample": "“Kiss from a Rose” - Seal"
+    },
+    {
+      "id": 14,
+      "name": "OB-8",
+      "userId": 7,
+      "characteristicId": 13,
+      "description": "The final OB-series synth - used by new wave and funk artists for creamy pads and polyphonic leads.",
+      "yearMade": 1983,
+      "imgUrl": "",
+      "trackExample": "“What Have You Done for Me Lately” - Janet Jackson"
+    },
+    {
+      "id": 15,
+      "name": "EMS VCS3",
+      "userId": 8,
+      "characteristicId": 14,
+      "description": "British modular synth known for sci-fi effects and experimental textures.",
+      "yearMade": 1969,
+      "imgUrl": "",
+      "trackExample": "“On the Run” - Pink Floyd"
+    },
+    {
+      "id": 16,
+      "name": "Sub 37",
+      "userId": 2,
+      "characteristicId": 11,
+      "description": "A modern paraphonic analog synth with powerful modulation and classic Moog sound.",
+      "yearMade": 2014,
+      "imgUrl": "",
+      "trackExample": "“Midnight” - Caribou"
+    },
+    {
+      "id": 17,
+      "name": "PPG Wave",
+      "userId": 9,
+      "characteristicId": 1,
+      "description": "A groundbreaking hybrid digital/analog synth featuring wavetable oscillators and analog filters - famous for rich, evolving textures and complex harmonic content.",
+      "yearMade": 1982,
+      "imgUrl": "",
+      "trackExample": "“Neverender” - Justice"
+    },
+    {
+      "id": 18,
+      "name": "ARP 2600",
+      "userId": 6,
+      "characteristicId": 2,
+      "description": "A semi-modular classic used in film scores, early electronic music, and rock - famous for its use in sound design and sci-fi, like R2-D2's voice in Star Wars.",
+      "yearMade": 1971,
+      "imgUrl": "",
+      "trackExample": "“Radioactivity” - Kraftwerk"
+    },
+    {
+      "id": 19,
+      "name": "Jupiter-4",
+      "userId": 1,
+      "characteristicId": 4,
+      "description": "The first Jupiter synth - used for strings, brass, and arpeggios in early synthpop.",
+      "yearMade": 1978,
+      "imgUrl": "",
+      "trackExample": "“We Are Glass” - Gary Numan"
+    },
+    {
+      "id": 20,
+      "name": "Blofeld",
+      "userId": 10,
+      "characteristicId": 14,
+      "description": "A compact wavetable synth delivering modern textures and evolving pads.",
+      "yearMade": 2007,
+      "imgUrl": "",
+      "trackExample": "“Collider” - Noisia"
+    }
+  ],
+  "characteristics": [
+    {
+      "id": 1,
+      "characteristic": "Warm"
+    },
+    {
+      "id": 2,
+      "characteristic": "Fat"
+    },
+    {
+      "id": 3,
+      "characteristic": "Rich"
+    },
+    {
+      "id": 4,
+      "characteristic": "Bright"
+    },
+    {
+      "id": 5,
+      "characteristic": "Squelchy"
+    },
+    {
+      "id": 6,
+      "characteristic": "Majestic"
+    },
+    {
+      "id": 7,
+      "characteristic": "Glossy"
+    },
+    {
+      "id": 8,
+      "characteristic": "Plucky"
+    },
+    {
+      "id": 9,
+      "characteristic": "Bold"
+    },
+    {
+      "id": 10,
+      "characteristic": "Gritty"
+    },
+    {
+      "id": 11,
+      "characteristic": "Deep"
+    },
+    {
+      "id": 12,
+      "characteristic": "Lush"
+    },
+    {
+      "id": 13,
+      "characteristic": "Sweet"
+    },
+    {
+      "id": 14,
+      "characteristic": "Experimental"
+    },
+    {
+      "id": 14,
+      "characteristic": "Edgy"
+    },
+    {
+      "id": 15,
+      "characteristic": "Punchy"
+    }
+  ],
+  "userSynths": []
+}
