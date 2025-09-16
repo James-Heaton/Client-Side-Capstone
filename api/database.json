@@ -219,7 +219,7 @@
       "characteristicId": 5,
       "description": "Originally marketed as a bass accompaniment tool, the TB-303 became the cornerstone of acid house music thanks to its resonant, chirpy filter sweeps.",
       "yearMade": 1981,
-      "imgUrl": "",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Roland_TB-303_Panel.jpg",
       "trackExample": "“Acid Tracks” - Phuture"
     },
     {
@@ -229,7 +229,7 @@
       "characteristicId": 2,
       "description": "The definitive monophonic analog synth - prized for its deep basses, soaring leads, and smooth filter. A staple in classic rock, funk, and beyond.",
       "yearMade": 1970,
-      "imgUrl": "",
+      "imgUrl": "https://cdn.mos.cms.futurecdn.net/8c033180eb0e2f9d5a7c27c80f9816fc-1200-80.jpg",
       "trackExample": "“Flash Light” - Parliament"
     },
     {
@@ -239,7 +239,7 @@
       "characteristicId": 3,
       "description": "The first fully programmable polyphonic analog synth - helped shape the sound of '80s pop and electronic.",
       "yearMade": 1978,
-      "imgUrl": "",
+      "imgUrl": "https://www.polynominal.com/sequential-circuits-prophet5/assets/images/sequential-circuits-prophet-5-1588x752.jpg",
       "trackExample": "“Thriller” - Michael Jackson"
     },
     {
@@ -249,7 +249,7 @@
       "characteristicId": 12,
       "description": "A 6-voice analog poly with signature chorus - favored for pads, brass, and bass in pop and electronic music.",
       "yearMade": 1984,
-      "imgUrl": "",
+      "imgUrl": "https://www.rolandcloud.com/getmedia/6cce0b12-e86e-45cb-8114-ef5eccd63061/Juno-106.png",
       "trackExample": "“Don't You Forget About Me” - Simple Minds"
     },
     {
@@ -259,7 +259,7 @@
       "characteristicId": 4,
       "description": "The first commercially successful digital FM synth - famous for its electric pianos and bell tones.",
       "yearMade": 1983,
-      "imgUrl": "",
+      "imgUrl": "https://www.sketchappsources.com/resources/source-images-plus1/Yamaha-DX7-1.png",
       "trackExample": "Take On Me” - a-ha"
     },
     {
@@ -269,7 +269,7 @@
       "characteristicId": 6,
       "description": "Roland's flagship polyphonic synth - prized for its wide pads, brassy leads, and lush layering.",
       "yearMade": 1981,
-      "imgUrl": "",
+      "imgUrl": "https://articles.roland.com/wp-content/uploads/2023/01/JUPITER-8_1600x800_2.png",
       "trackExample": "“Save a Prayer” - Duran Duran"
     },
     {
@@ -279,8 +279,8 @@
       "characteristicId": 7,
       "description": "A digital workstation famous for the “M1 Piano” and organ - foundational in house and dance music.",
       "yearMade": 1988,
-      "imgUrl": "",
-      "trackExample": "“Show Me Love” - Robin S."
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/6/66/Korg_M1.png",
+      "trackExample": "“17” - MK"
     },
     {
       "id": 8,
@@ -289,7 +289,7 @@
       "characteristicId": 8,
       "description": "A duophonic analog synth loved for its expressive character - used in funk and fusion.",
       "yearMade": 1972,
-      "imgUrl": "",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/ARP_Odyssey_Mk1_Black_Face_%28edit1%29.jpg",
       "trackExample": "“Chameleon” - Herbie Hancock"
     },
     {
@@ -299,7 +299,7 @@
       "characteristicId": 9,
       "description": "A massive-sounding analog polysynth famous for its brass stabs and huge pads.",
       "yearMade": 1980,
-      "imgUrl": "",
+      "imgUrl": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjgcDX3siH77f7clLZHd3zkHKM9jx5sABekZFtNzGNHqgnK8vu7AMxSZkfuHvrVkDLvwXHvRWMSxQskHbAvXNIspeoUDuy2tAaP3nMlZwMzWCys3fVw95BHUDwfMRFaFRQbDTq7rW-hebwUmXkkah-6G3SFzaM9IevZ86bdF_5xsomONsGQlhS9lw/s1600/1.webp",
       "trackExample": "“Jump” - Van Halen"
     },
     {
@@ -309,17 +309,17 @@
       "characteristicId": 10,
       "description": "A semi-modular mono synth known for its filthy filters and patching capabilities.",
       "yearMade": 1978,
-      "imgUrl": "",
+      "imgUrl": "https://cdm.link/app/uploads/2013/01/korg_ms20.jpg",
       "trackExample": "“Da Funk” - Daft Punk"
     },
     {
       "id": 11,
       "name": "SH-101",
       "userId": 1,
-      "characteristicId": 15,
+      "characteristicId": 16,
       "description": "A compact mono synth loved for punchy bass and lead sounds - often used live",
       "yearMade": 1982,
-      "imgUrl": "",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0c/SH-101.jpg",
       "trackExample": "“Blue Monday” - New Order"
     },
     {
@@ -329,7 +329,7 @@
       "characteristicId": 11,
       "description": "Not a synth per se, but a programmable analog drum machine whose bass drum became legendary in hip-hop and dance music.",
       "yearMade": 1980,
-      "imgUrl": "",
+      "imgUrl": "https://www.pointblankmusicschool.com/blog/wp-content/uploads/2023/07/BLOG-TEMPLATE2-1.png",
       "trackExample": "“Planet Rock” - Afrika Bambaataa"
     },
     {
@@ -339,7 +339,7 @@
       "characteristicId": 12,
       "description": "Combined samples with synthesis to produce complex, evolving sounds - perfect for '80s ballads.",
       "yearMade": 1987,
-      "imgUrl": "",
+      "imgUrl": "https://img.audiofanzine.com/images/u/product/normal/roland-d-50-844.jpg",
       "trackExample": "“Kiss from a Rose” - Seal"
     },
     {
@@ -349,7 +349,7 @@
       "characteristicId": 13,
       "description": "The final OB-series synth - used by new wave and funk artists for creamy pads and polyphonic leads.",
       "yearMade": 1983,
-      "imgUrl": "",
+      "imgUrl": "https://greatsynthesizers.com/wp/wp-content/uploads/2018/05/Oberheim-OB8-Synthesizer-01.jpg",
       "trackExample": "“What Have You Done for Me Lately” - Janet Jackson"
     },
     {
@@ -359,18 +359,18 @@
       "characteristicId": 14,
       "description": "British modular synth known for sci-fi effects and experimental textures.",
       "yearMade": 1969,
-      "imgUrl": "",
+      "imgUrl": "https://www.bonhams.com/_next/image.jpg?url=https%3A%2F%2Fimg1.bonhams.com%2Fimage%3Fsrc%3DImages%2Flive%2F2022-10%2F10%2F25259806-1-1.jpg&w=2400&q=75",
       "trackExample": "“On the Run” - Pink Floyd"
     },
     {
       "id": 16,
-      "name": "Sub 37",
+      "name": "Voyager",
       "userId": 2,
-      "characteristicId": 11,
-      "description": "A modern paraphonic analog synth with powerful modulation and classic Moog sound.",
-      "yearMade": 2014,
-      "imgUrl": "",
-      "trackExample": "“Midnight” - Caribou"
+      "characteristicId": 3,
+      "description": "Modern analog Moog, with the classic Moog filter and rich sound - used by many electronic artists.",
+      "yearMade": 2002,
+      "imgUrl": "https://media.sweetwater.com/m/products/image/e7fddb201ayjoLLvkBIOo7LpVqbPsy2wsZugMPsV.jpg?quality=82&ha=e7fddb201ae65685",
+      "trackExample": "“Arguru” - Deadmau5"
     },
     {
       "id": 17,
@@ -379,7 +379,7 @@
       "characteristicId": 1,
       "description": "A groundbreaking hybrid digital/analog synth featuring wavetable oscillators and analog filters - famous for rich, evolving textures and complex harmonic content.",
       "yearMade": 1982,
-      "imgUrl": "",
+      "imgUrl": "https://www.amazona.de/wp-content/uploads/2007/06/ppg_1.jpg",
       "trackExample": "“Neverender” - Justice"
     },
     {
@@ -389,7 +389,7 @@
       "characteristicId": 2,
       "description": "A semi-modular classic used in film scores, early electronic music, and rock - famous for its use in sound design and sci-fi, like R2-D2's voice in Star Wars.",
       "yearMade": 1971,
-      "imgUrl": "",
+      "imgUrl": "https://greatsynthesizers.com/wp/wp-content/uploads/2015/02/ARP2600-GreatSynthesizers-01.jpg",
       "trackExample": "“Radioactivity” - Kraftwerk"
     },
     {
@@ -399,17 +399,17 @@
       "characteristicId": 4,
       "description": "The first Jupiter synth - used for strings, brass, and arpeggios in early synthpop.",
       "yearMade": 1978,
-      "imgUrl": "",
+      "imgUrl": "https://greatsynthesizers.com/wp/wp-content/uploads/2016/07/Roland-Jupiter4-Synthesizer-01.jpg",
       "trackExample": "“We Are Glass” - Gary Numan"
     },
     {
       "id": 20,
       "name": "Blofeld",
       "userId": 10,
-      "characteristicId": 14,
+      "characteristicId": 15,
       "description": "A compact wavetable synth delivering modern textures and evolving pads.",
       "yearMade": 2007,
-      "imgUrl": "",
+      "imgUrl": "https://media.sweetwater.com/m/products/image/c59af10a9chJoZRmUq4Al9R17wQJZHBGsX8P1QFl.jpg?v=c59af10a9c580a54",
       "trackExample": "“Collider” - Noisia"
     }
   ],
@@ -471,11 +471,11 @@
       "characteristic": "Experimental"
     },
     {
-      "id": 14,
+      "id": 15,
       "characteristic": "Edgy"
     },
     {
-      "id": 15,
+      "id": 16,
       "characteristic": "Punchy"
     }
   ],
