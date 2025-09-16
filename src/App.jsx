@@ -1,4 +1,10 @@
+import { Routes, Route } from "react-router-dom";
+import { Login } from "./auth/Login";
 
 export const App = () => {
-  return <div>Hello World!</div>
+  return (
+    <Routes>
+      <Route path="/login" element={<Login />}></Route>
+    </Routes>
+  )
 }
