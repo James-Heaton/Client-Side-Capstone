@@ -1,11 +1,12 @@
-import { Link } from "react-router-dom"
+import { SynthCard } from "./SynthCard"
 
 export const SynthCatalogue = () => {
     return (
-        <div>
+        <div className="synth-catalogue">
             <h1>Synth Catalogue</h1>
-            <p>This is the synth catalogue placeholder</p>
-            <Link to="/synth-detail">Synth Card</Link>
+            <div className="synth-catalogue-cards">
+                <SynthCard />
+            </div>
         </div>
     )
 }
