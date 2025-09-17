@@ -75,140 +75,140 @@
       "name": "James Heaton",
       "bio": "I like synths.",
       "email": "jheaton@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/f/fe/ThomasBangalter028_%28Cropped%29.jpg"
     },
     {
       "id": 12,
       "name": "Frederick Frick",
       "bio": "I'm a musical gnome, and I think that really sets me apart.",
       "email": "ffrick@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://s.turbifycdn.com/aah/yhst-83547458988818/gnome-holding-buckets-94.jpg"
     },
     {
       "id": 13,
       "name": "Admiral Whip Babbit",
       "bio": "Currently investigating submarine sandwich protocols for the maritime division.",
       "email": "awbabbit@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3d/VADM_John_Bulkeley_1988_NR_edit.jpg"
     },
     {
       "id": 14,
       "name": "Juan Friend",
       "bio": "UPS driver specializing in historically significant hair deliveries.",
       "email": "jfriend@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://about.ups.com/content/dam/upsstories/images/our-company/great-employer/ups-has-unmatched-safety-culture/1023-960-COH.jpg"
     },
     {
       "id": 15,
       "name": "Schneider Webb",
       "bio": "I'm a herder. I lead the charge.",
       "email": "swebb@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://media.licdn.com/dms/image/v2/C5612AQHjV-mFUsE7zg/article-inline_image-shrink_400_744/article-inline_image-shrink_400_744/0/1545323578757?e=1759968000&v=beta&t=ktRPh4ksSz2F4jmDAXU21opY17a7UQ7sDatL3wSSrEo"
     },
     {
       "id": 16,
       "name": "Max Braxton",
       "bio": "Professional problem solver with experience in customer service escalation.",
       "email": "mbraxton@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/76.jpg"
     },
     {
       "id": 17,
       "name": "Ernie Quasimodo",
       "bio": "Amateur crytozoologist in possession of several low-res pictures of a reincarnated pterodactyl.",
       "email": "tglidden@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/38.jpg"
     },
     {
       "id": 18,
       "name": "Guido Frisbee",
       "bio": "I live just down the street from you, and I was gonna stop by and fix up your yard for $75.",
       "email": "gfrisbee@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/24.jpg"
     },
     {
       "id": 19,
       "name": "Felix Babakuntos",
       "bio": "Finance. High finance, in fact.",
       "email": "fbabakuntos@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/11.jpg"
     },
     {
       "id": 20,
       "name": "Merlin Mumford",
       "bio": "I practice various forms of mystical arts while maintaining a practical business sense.",
       "email": "mmumford@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://m.media-amazon.com/images/I/711K4k+lJHL._UY1000_.jpg"
     },
     {
       "id": 21,
       "name": "Otis King",
       "bio": "King of R&B. My new song “Triple Check” is available at record stores nationwide.",
       "email": "oking@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://static01.nyt.com/images/2021/04/30/obituaries/24Oscher/merlin_186722856_3636af9d-9526-4e77-8858-d8e629d25171-mediumSquareAt3X.jpg"
     },
     {
       "id": 22,
       "name": "Dugan Nash",
       "bio": "Certified in advanced mule battle techniques and banana boat safety protocols.",
       "email": "dnash@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/59.jpg"
     },
     {
       "id": 23,
       "name": "Orville Sash",
       "bio": "Interested in entering into a gentleman's agreement with ye.",
       "email": "osash@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/21.jpg"
     },
     {
       "id": 24,
       "name": "Maurice Majesty",
       "bio": "I carry myself with dignity and expect others to recognize my regal bearing.",
       "email": "mmajesty@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/40.jpg"
     },
     {
       "id": 25,
-      "name": "Chaplin Schumacher",
+      "name": "Chaplain Schumacher",
       "bio": "Religious counselor who also dabbles in automotive repair and maintenance.",
       "email": "cschumacher@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://thechaplaincy-manchesterairport.co.uk/wp-content/uploads/2024/03/David-2.png"
     },
     {
       "id": 26,
       "name": "Nuno Gloop",
       "bio": "I specialize in viscous liquid distribution and have strong opinions about consistency.",
       "email": "ngloop@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/women/48.jpg"
     },
     {
       "id": 27,
       "name": "Smiley Lynch",
       "bio": "I maintain a positive attitude even in the most challenging customer service situations.",
       "email": "slynch@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/women/56.jpg"
     },
     {
       "id": 28,
       "name": "Ewan Rump",
       "bio": "Anatomical consultant with expertise in posterior-related matters and concerns.",
       "email": "erump@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/37.jpg"
     },
     {
       "id": 29,
       "name": "Mummy Napkin",
       "bio": "Ancient preservation specialist currently working in the paper goods industry.",
       "email": "mnapkin@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/women/53.jpg"
     },
     {
       "id": 30,
       "name": "Dick Fortune",
       "bio": "Financial advisor who believes strongly in the power of positive thinking and luck.",
       "email": "dfortune@nss.com",
-      "imgUrl": ""
+      "imgUrl": "https://randomuser.me/api/portraits/men/13.jpg"
     }
   ],
   "synths": [

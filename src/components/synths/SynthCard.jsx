@@ -13,18 +13,26 @@ export const SynthCard = () => {
   }, []);
 
   return (
-    <div>
+    <>
       {synths.map((synth) => (
-        <Link to={`/synth-detail/${synth.id}`} key={synth.id}>
-          <div className="synth-card" key={synth.id}>
-            <img className="synth-card-img" src={synth.imgUrl} alt={synth.name} />
-            <div className="synth-card-name">
-              <h3>{synth.name}</h3>
-            </div>
+        <Link
+          to={`/synth-detail/${synth.id}`}
+          key={synth.id}
+          className="synth-card"
+        >
+          <div key={synth.id}>
+            <img
+              className="synth-card-img"
+              src={synth.imgUrl}
+              alt={synth.name}
+            />
+          </div>
+          <div className="synth-card-name">
+            <h3>{synth.name}</h3>
           </div>
         </Link>
       ))}
-    </div>
+    </>
   );
 };
 

@@ -1,0 +1,41 @@
+.synth-catalogue {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.synth-catalogue-cards {
+    background-color: rgb(188, 212, 255);
+    width: 80%;
+    height: 48rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.synth-card {
+    background-color: rgb(182, 255, 243);
+    width: 18rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem;
+    flex-shrink: 0;
+}
+
+.synth-card-name {
+   margin: 2rem;
+}
+
+.synth-card-img {
+    height: 8rem;
+    width: 8rem;
+    object-fit: cover;
+    margin: 1rem;
+    border-radius: 50%;
+}

@@ -1,3 +1,4 @@
+import "./SynthCatalogue.css"
 import { SynthCard } from "./SynthCard"
 
 export const SynthCatalogue = () => {
