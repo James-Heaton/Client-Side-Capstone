@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { getUserByEmail } from "../services/userService";
 
-export const Login = () => {
+export const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState("");
   const navigate = useNavigate();
 
@@ -20,7 +20,7 @@ export const Login = () => {
           })
         );
 
-        navigate("/");
+        setIsLoggedIn(true);
       } else {
         window.alert("Invalid login");
       }

@@ -80,7 +80,7 @@
     {
       "id": 12,
       "name": "Frederick Frick",
-      "bio": "I am a musical gnome, and I think that really sets me apart.",
+      "bio": "I'm a musical gnome, and I think that really sets me apart.",
       "email": "ffrick@nss.com",
       "imgUrl": ""
     },
@@ -101,7 +101,7 @@
     {
       "id": 15,
       "name": "Schneider Webb",
-      "bio": "Professional swamp donkey wrangler.",
+      "bio": "I'm a herder. I lead the charge.",
       "email": "swebb@nss.com",
       "imgUrl": ""
     },
@@ -114,30 +114,30 @@
     },
     {
       "id": 17,
-      "name": "Twinkie Glidden",
-      "bio": "Quality assurance specialist in the snack food industry with very high standards.",
+      "name": "Ernie Quasimodo",
+      "bio": "Amateur crytozoologist in possession of several low-res pictures of a reincarnated pterodactyl.",
       "email": "tglidden@nss.com",
       "imgUrl": ""
     },
     {
       "id": 18,
       "name": "Guido Frisbee",
-      "bio": "Recreational sports enthusiast with a passion for disc-based activities.",
+      "bio": "I live just down the street from you, and I was gonna stop by and fix up your yard for $75.",
       "email": "gfrisbee@nss.com",
       "imgUrl": ""
     },
     {
       "id": 19,
       "name": "Felix Babakuntos",
-      "bio": "I work in hospitality and believe in maintaining the highest standards of service. Interested in windswept looks.",
+      "bio": "Finance. High finance, in fact.",
       "email": "fbabakuntos@nss.com",
       "imgUrl": ""
     },
     {
       "id": 20,
-      "name": "Maurice Majesty",
-      "bio": "I carry myself with dignity and expect others to recognize my regal bearing.",
-      "email": "mmajesty@nss.com",
+      "name": "Merlin Mumford",
+      "bio": "I practice various forms of mystical arts while maintaining a practical business sense.",
+      "email": "mmumford@nss.com",
       "imgUrl": ""
     },
     {
@@ -163,9 +163,9 @@
     },
     {
       "id": 24,
-      "name": "Merlin Mumford",
-      "bio": "I practice various forms of mystical arts while maintaining a practical business sense.",
-      "email": "mmumford@nss.com",
+      "name": "Maurice Majesty",
+      "bio": "I carry myself with dignity and expect others to recognize my regal bearing.",
+      "email": "mmajesty@nss.com",
       "imgUrl": ""
     },
     {
