@@ -35,7 +35,7 @@ export const ApplicationViews = () => {
         <Route path="home" element={<Home />} />
         <Route path="edit-profile" element={<EditUserProfile />} />
         <Route path="collectors" element={<Collectors />} />
-        <Route path="user" element={<NonCurrentUserProfile />} />
+        <Route path="collector/:userId" element={<NonCurrentUserProfile />} />
         <Route path="catalogue" element={<SynthCatalogue />} />
         <Route path="synth-detail/:synthId" element={<SynthDetail />} />
         <Route path="create" element={<CreateASynth />} />

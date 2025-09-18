@@ -9,3 +9,7 @@ export const getUserById = (userId) => {
     res.json()
   );
 };
+
+export const getUsers = () => {
+  return fetch("http://localhost:8088/users").then((res) => res.json());
+};

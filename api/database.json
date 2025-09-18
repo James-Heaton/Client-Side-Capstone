@@ -75,14 +75,14 @@
       "name": "James Heaton",
       "bio": "I like synths.",
       "email": "jheaton@nss.com",
-      "imgUrl": "https://blog.12edit.com/content/images/2022/07/mroizo.webp"
+      "imgUrl": "https://avatars.githubusercontent.com/u/213261719?v=4"
     },
     {
       "id": 12,
       "name": "Frederick Frick",
       "bio": "I'm a musical gnome, and I think that really sets me apart.",
       "email": "ffrick@nss.com",
-      "imgUrl": "https://s.turbifycdn.com/aah/yhst-83547458988818/gnome-holding-buckets-94.jpg"
+      "imgUrl": "https://i.etsystatic.com/6220301/r/il/fbc512/2603437752/il_570xN.2603437752_77u7.jpg"
     },
     {
       "id": 13,
@@ -103,7 +103,7 @@
       "name": "Schneider Webb",
       "bio": "I'm a herder. I lead the charge.",
       "email": "swebb@nss.com",
-      "imgUrl": "https://media.licdn.com/dms/image/v2/C5612AQHjV-mFUsE7zg/article-inline_image-shrink_400_744/article-inline_image-shrink_400_744/0/1545323578757?e=1759968000&v=beta&t=ktRPh4ksSz2F4jmDAXU21opY17a7UQ7sDatL3wSSrEo"
+      "imgUrl": "https://i.pinimg.com/550x/62/f0/bd/62f0bd70a0182bc7776306ecaead5854.jpg"
     },
     {
       "id": 16,
@@ -131,7 +131,7 @@
       "name": "Felix Babakuntos",
       "bio": "Finance. High finance, in fact.",
       "email": "fbabakuntos@nss.com",
-      "imgUrl": "https://randomuser.me/api/portraits/men/11.jpg"
+      "imgUrl": "https://randomuser.me/api/portraits/men/82.jpg"
     },
     {
       "id": 20,
@@ -152,7 +152,7 @@
       "name": "Dugan Nash",
       "bio": "Certified in advanced mule battle techniques and banana boat safety protocols.",
       "email": "dnash@nss.com",
-      "imgUrl": "https://randomuser.me/api/portraits/men/59.jpg"
+      "imgUrl": "https://randomuser.me/api/portraits/men/40.jpg"
     },
     {
       "id": 23,
@@ -166,7 +166,7 @@
       "name": "Maurice Majesty",
       "bio": "I carry myself with dignity and expect others to recognize my regal bearing.",
       "email": "mmajesty@nss.com",
-      "imgUrl": "https://randomuser.me/api/portraits/men/40.jpg"
+      "imgUrl": "https://randomuser.me/api/portraits/men/25.jpg"
     },
     {
       "id": 25,
@@ -479,5 +479,189 @@
       "characteristic": "Punchy"
     }
   ],
-  "userSynths": []
+  "userSynths": [
+    { "id": 1, "userId": 11, "synthId": 3 },
+    { "id": 2, "userId": 11, "synthId": 7 },
+    { "id": 3, "userId": 11, "synthId": 12 },
+    { "id": 4, "userId": 11, "synthId": 18 },
+    { "id": 5, "userId": 11, "synthId": 4 },
+    { "id": 6, "userId": 11, "synthId": 9 },
+    { "id": 7, "userId": 11, "synthId": 15 },
+
+    { "id": 8, "userId": 12, "synthId": 1 },
+    { "id": 9, "userId": 12, "synthId": 6 },
+    { "id": 10, "userId": 12, "synthId": 11 },
+    { "id": 11, "userId": 12, "synthId": 16 },
+    { "id": 12, "userId": 12, "synthId": 20 },
+    { "id": 13, "userId": 12, "synthId": 5 },
+    { "id": 14, "userId": 12, "synthId": 10 },
+    { "id": 15, "userId": 12, "synthId": 14 },
+
+    { "id": 16, "userId": 13, "synthId": 2 },
+    { "id": 17, "userId": 13, "synthId": 8 },
+    { "id": 18, "userId": 13, "synthId": 13 },
+    { "id": 19, "userId": 13, "synthId": 19 },
+    { "id": 20, "userId": 13, "synthId": 3 },
+    { "id": 21, "userId": 13, "synthId": 17 },
+
+    { "id": 22, "userId": 14, "synthId": 7 },
+    { "id": 23, "userId": 14, "synthId": 12 },
+    { "id": 24, "userId": 14, "synthId": 18 },
+    { "id": 25, "userId": 14, "synthId": 1 },
+    { "id": 26, "userId": 14, "synthId": 6 },
+    { "id": 27, "userId": 14, "synthId": 11 },
+    { "id": 28, "userId": 14, "synthId": 16 },
+    { "id": 29, "userId": 14, "synthId": 20 },
+    { "id": 30, "userId": 14, "synthId": 4 },
+
+    { "id": 31, "userId": 15, "synthId": 9 },
+    { "id": 32, "userId": 15, "synthId": 14 },
+    { "id": 33, "userId": 15, "synthId": 2 },
+    { "id": 34, "userId": 15, "synthId": 8 },
+    { "id": 35, "userId": 15, "synthId": 13 },
+    { "id": 36, "userId": 15, "synthId": 19 },
+    { "id": 37, "userId": 15, "synthId": 5 },
+    { "id": 38, "userId": 15, "synthId": 10 },
+    { "id": 39, "userId": 15, "synthId": 15 },
+    { "id": 40, "userId": 15, "synthId": 3 },
+    { "id": 41, "userId": 15, "synthId": 17 },
+
+    { "id": 42, "userId": 16, "synthId": 7 },
+    { "id": 43, "userId": 16, "synthId": 12 },
+    { "id": 44, "userId": 16, "synthId": 18 },
+    { "id": 45, "userId": 16, "synthId": 1 },
+    { "id": 46, "userId": 16, "synthId": 6 },
+    { "id": 47, "userId": 16, "synthId": 11 },
+
+    { "id": 48, "userId": 17, "synthId": 16 },
+    { "id": 49, "userId": 17, "synthId": 20 },
+    { "id": 50, "userId": 17, "synthId": 4 },
+    { "id": 51, "userId": 17, "synthId": 9 },
+    { "id": 52, "userId": 17, "synthId": 14 },
+    { "id": 53, "userId": 17, "synthId": 2 },
+    { "id": 54, "userId": 17, "synthId": 8 },
+    { "id": 55, "userId": 17, "synthId": 13 },
+
+    { "id": 56, "userId": 18, "synthId": 19 },
+    { "id": 57, "userId": 18, "synthId": 5 },
+    { "id": 58, "userId": 18, "synthId": 10 },
+    { "id": 59, "userId": 18, "synthId": 15 },
+    { "id": 60, "userId": 18, "synthId": 3 },
+    { "id": 61, "userId": 18, "synthId": 17 },
+    { "id": 62, "userId": 18, "synthId": 7 },
+
+    { "id": 63, "userId": 19, "synthId": 12 },
+    { "id": 64, "userId": 19, "synthId": 18 },
+    { "id": 65, "userId": 19, "synthId": 1 },
+    { "id": 66, "userId": 19, "synthId": 6 },
+    { "id": 67, "userId": 19, "synthId": 11 },
+    { "id": 68, "userId": 19, "synthId": 16 },
+    { "id": 69, "userId": 19, "synthId": 20 },
+    { "id": 70, "userId": 19, "synthId": 4 },
+    { "id": 71, "userId": 19, "synthId": 9 },
+    { "id": 72, "userId": 19, "synthId": 14 },
+
+    { "id": 73, "userId": 20, "synthId": 2 },
+    { "id": 74, "userId": 20, "synthId": 8 },
+    { "id": 75, "userId": 20, "synthId": 13 },
+    { "id": 76, "userId": 20, "synthId": 19 },
+    { "id": 77, "userId": 20, "synthId": 5 },
+    { "id": 78, "userId": 20, "synthId": 10 },
+
+    { "id": 79, "userId": 21, "synthId": 15 },
+    { "id": 80, "userId": 21, "synthId": 3 },
+    { "id": 81, "userId": 21, "synthId": 17 },
+    { "id": 82, "userId": 21, "synthId": 7 },
+    { "id": 83, "userId": 21, "synthId": 12 },
+    { "id": 84, "userId": 21, "synthId": 18 },
+    { "id": 85, "userId": 21, "synthId": 1 },
+    { "id": 86, "userId": 21, "synthId": 6 },
+
+    { "id": 87, "userId": 22, "synthId": 11 },
+    { "id": 88, "userId": 22, "synthId": 16 },
+    { "id": 89, "userId": 22, "synthId": 20 },
+    { "id": 90, "userId": 22, "synthId": 4 },
+    { "id": 91, "userId": 22, "synthId": 9 },
+    { "id": 92, "userId": 22, "synthId": 14 },
+    { "id": 93, "userId": 22, "synthId": 2 },
+    { "id": 94, "userId": 22, "synthId": 8 },
+    { "id": 95, "userId": 22, "synthId": 13 },
+
+    { "id": 96, "userId": 23, "synthId": 19 },
+    { "id": 97, "userId": 23, "synthId": 5 },
+    { "id": 98, "userId": 23, "synthId": 10 },
+    { "id": 99, "userId": 23, "synthId": 15 },
+    { "id": 100, "userId": 23, "synthId": 3 },
+    { "id": 101, "userId": 23, "synthId": 17 },
+
+    { "id": 102, "userId": 24, "synthId": 7 },
+    { "id": 103, "userId": 24, "synthId": 12 },
+    { "id": 104, "userId": 24, "synthId": 18 },
+    { "id": 105, "userId": 24, "synthId": 1 },
+    { "id": 106, "userId": 24, "synthId": 6 },
+    { "id": 107, "userId": 24, "synthId": 11 },
+    { "id": 108, "userId": 24, "synthId": 16 },
+    { "id": 109, "userId": 24, "synthId": 20 },
+    { "id": 110, "userId": 24, "synthId": 4 },
+    { "id": 111, "userId": 24, "synthId": 9 },
+    { "id": 112, "userId": 24, "synthId": 14 },
+
+    { "id": 113, "userId": 25, "synthId": 2 },
+    { "id": 114, "userId": 25, "synthId": 8 },
+    { "id": 115, "userId": 25, "synthId": 13 },
+    { "id": 116, "userId": 25, "synthId": 19 },
+    { "id": 117, "userId": 25, "synthId": 5 },
+    { "id": 118, "userId": 25, "synthId": 10 },
+    { "id": 119, "userId": 25, "synthId": 15 },
+
+    { "id": 120, "userId": 26, "synthId": 3 },
+    { "id": 121, "userId": 26, "synthId": 17 },
+    { "id": 122, "userId": 26, "synthId": 7 },
+    { "id": 123, "userId": 26, "synthId": 12 },
+    { "id": 124, "userId": 26, "synthId": 18 },
+    { "id": 125, "userId": 26, "synthId": 1 },
+    { "id": 126, "userId": 26, "synthId": 6 },
+    { "id": 127, "userId": 26, "synthId": 11 },
+    { "id": 128, "userId": 26, "synthId": 16 },
+
+    { "id": 129, "userId": 27, "synthId": 20 },
+    { "id": 130, "userId": 27, "synthId": 4 },
+    { "id": 131, "userId": 27, "synthId": 9 },
+    { "id": 132, "userId": 27, "synthId": 14 },
+    { "id": 133, "userId": 27, "synthId": 2 },
+    { "id": 134, "userId": 27, "synthId": 8 },
+
+    { "id": 135, "userId": 28, "synthId": 13 },
+    { "id": 136, "userId": 28, "synthId": 19 },
+    { "id": 137, "userId": 28, "synthId": 5 },
+    { "id": 138, "userId": 28, "synthId": 10 },
+    { "id": 139, "userId": 28, "synthId": 15 },
+    { "id": 140, "userId": 28, "synthId": 3 },
+    { "id": 141, "userId": 28, "synthId": 17 },
+    { "id": 142, "userId": 28, "synthId": 7 },
+    { "id": 143, "userId": 28, "synthId": 12 },
+    { "id": 144, "userId": 28, "synthId": 18 },
+
+    { "id": 145, "userId": 29, "synthId": 1 },
+    { "id": 146, "userId": 29, "synthId": 6 },
+    { "id": 147, "userId": 29, "synthId": 11 },
+    { "id": 148, "userId": 29, "synthId": 16 },
+    { "id": 149, "userId": 29, "synthId": 20 },
+    { "id": 150, "userId": 29, "synthId": 4 },
+    { "id": 151, "userId": 29, "synthId": 9 },
+    { "id": 152, "userId": 29, "synthId": 14 },
+
+    { "id": 153, "userId": 30, "synthId": 2 },
+    { "id": 154, "userId": 30, "synthId": 8 },
+    { "id": 155, "userId": 30, "synthId": 13 },
+    { "id": 156, "userId": 30, "synthId": 19 },
+    { "id": 157, "userId": 30, "synthId": 5 },
+    { "id": 158, "userId": 30, "synthId": 10 },
+    { "id": 159, "userId": 30, "synthId": 15 },
+    { "id": 160, "userId": 30, "synthId": 3 },
+    { "id": 161, "userId": 30, "synthId": 17 },
+    { "id": 162, "userId": 30, "synthId": 7 },
+    { "id": 163, "userId": 30, "synthId": 12 },
+    { "id": 164, "userId": 30, "synthId": 18 }
+  ]
 }

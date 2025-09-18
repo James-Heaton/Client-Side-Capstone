@@ -1,12 +1,13 @@
-import { Link } from "react-router-dom"
+import "./Collectors.css";
+import { UserCard } from "./UserCard";
 
 export const Collectors = () => {
-    return (
-        <div>
-            <h1>Collectors</h1>
-            <p>This is the collectors page placeholder</p>
-            <Link to="/user">User Card</Link>
-        </div>
-        
-    )
-}
+  return (
+    <div className="collectors">
+      <h1>Collectors</h1>
+      <div className="collector-cards">
+        <UserCard />
+      </div>
+    </div>
+  );
+};
