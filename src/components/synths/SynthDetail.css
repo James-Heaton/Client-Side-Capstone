@@ -1,0 +1,78 @@
+.synth-details-whole {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    height: 100vh;  
+}
+
+.synth-name {
+    margin: 2rem;
+}
+
+.synth-details {
+    display: flex;
+    border: 2px solid rgb(196, 196, 196);
+    width: 80%;
+    height: 48rem;
+    justify-self: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    flex-wrap: wrap;
+}
+
+.synth-details-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .synth-details-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgb(196, 196, 196);
+    padding: 1rem;
+    margin: 1rem;
+} */
+
+.synth-details-img {
+    max-width: 30rem;
+    padding: 1rem;
+    border: 2px solid rgb(196, 196, 196);
+    margin: 1rem
+}
+
+.synth-info {
+    border: 2px solid rgb(196, 196, 196);
+    padding: 3rem;
+    margin-top: 1rem;
+    max-width: 36rem;
+}
+
+.synth-description {
+    border: 2px solid rgb(196, 196, 196);
+    padding: 1rem;
+}
+
+.description {
+    margin-top: 1.5rem;
+}
+
+.synth-info-btns {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    /* border: 2px solid rgb(196, 196, 196); */
+    justify-content: space-between;
+}
+
+.synth-back-btn {
+    border: 2px solid rgb(196, 196, 196);
+    padding: 0.5rem;
+    /* margin-top: 2rem; */
+}
+
+.synth-edit-btn {
+    border: 2px solid rgb(196, 196, 196);
+    padding: 0.5rem;
+}

@@ -6,7 +6,7 @@
 }
 
 .synth-catalogue-cards {
-    background-color: rgb(188, 212, 255);
+    border: 2px solid rgb(196, 196, 196);
     width: 80%;
     height: 48rem;
     display: flex;
@@ -19,8 +19,8 @@
 }
 
 .synth-card {
-    background-color: rgb(182, 255, 243);
-    width: 18rem;
+    border: 2px solid rgb(196, 196, 196);
+    width: 20rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -28,14 +28,12 @@
     flex-shrink: 0;
 }
 
-.synth-card-name {
-   margin: 2rem;
-}
-
 .synth-card-img {
     height: 8rem;
     width: 8rem;
     object-fit: cover;
     margin: 1rem;
-    border-radius: 50%;
+    border: 2px solid rgb(196, 196, 196);
+    padding: 0.5rem;
+    /* border-radius: 50%; */
 }
