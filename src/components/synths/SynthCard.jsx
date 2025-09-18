@@ -14,13 +14,15 @@ export const SynthCard = () => {
 
   return (
     <>
-      {synths.map((synth) => (
+      {synths
+      .sort((a, b) => a.name.localeCompare(b.name))
+      .map((synth) => (
         <Link
           to={`/synth-detail/${synth.id}`}
           key={synth.id}
           className="synth-card"
         >
-          <div key={synth.id}>
+          <div>
             <img
               className="synth-card-img"
               src={synth.imgUrl}

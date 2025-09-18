@@ -18,6 +18,7 @@
     margin-top: 2rem;
     padding: 1rem;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .synth-details-left {
@@ -37,6 +38,8 @@
 .synth-details-right {
     width: 36rem;
     max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .synth-info {
@@ -53,7 +56,7 @@
 }
 
 .description {
-    margin-top: 1.5rem;
+    margin: 1.5rem;
 }
 
 .synth-info-btns {
