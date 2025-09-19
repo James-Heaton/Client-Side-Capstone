@@ -4,8 +4,7 @@ import { Link, useParams } from "react-router-dom";
 
 export const UserInfo = () => {
   const { userId } = useParams();
-  const [user, setUser] = useState([]);
-  const [currentUser, setCurrentUser] = useState({});
+  const [user, setUser] = useState({});
 
   useEffect(() => {
     getUserById(userId).then((userData) => {
@@ -13,27 +12,10 @@ export const UserInfo = () => {
     });
   }, [userId]);
 
-  useEffect(() => {
-    const localUser = localStorage.getItem("user");
-    const localUserObject = JSON.parse(localUser);
-
-    setCurrentUser(localUserObject);
-  }, []);
-
-
-
-  const showEditProfileBtn = () => {
-    if (user?.id === currentUser.id) {
-      return <Link to="/edit-synth" className="synth-edit-btn">Edit</Link>;
-    } else {
-      return null;
-    }
-  };
-
   return (
     <div className="user-info-block">
       <div className="user-info-block-top">
-        <img src={user.imgUrl} alt={user.name} className="user-info-img"/>
+        <img src={user.imgUrl} alt={user.name} className="user-info-img" />
       </div>
       <div>
         <h1>{user.name}</h1>
@@ -44,28 +26,24 @@ export const UserInfo = () => {
           <p>{user.bio}</p>
         </div>
       </div>
-      {showEditProfileBtn()}
     </div>
-    
-  )
+  );
 };
 
 export const UserHomeInfo = () => {
   const [user, setUser] = useState({});
 
   useEffect(() => {
-    const storedUser = JSON.parse(localStorage.getItem("user"))
+    const storedUser = JSON.parse(localStorage.getItem("user"));
     if (storedUser?.id) {
-      getUserById(storedUser.id).then((userObj) => (
-        setUser(userObj)
-      ))
+      getUserById(storedUser.id).then((userObj) => setUser(userObj));
     }
-  }, [])
+  }, []);
 
   return (
     <div className="user-info-block">
       <div className="user-info-block-top">
-        <img src={user.imgUrl} alt={user.name} className="user-info-img"/>
+        <img src={user.imgUrl} alt={user.name} className="user-info-img" />
       </div>
       <div>
         <h1>{user.name}</h1>
@@ -76,8 +54,9 @@ export const UserHomeInfo = () => {
           <p>{user.bio}</p>
         </div>
       </div>
-      <Link to="/edit-synth" className="synth-edit-btn">Edit</Link>
+      <Link to="/edit-profile" className="synth-profile-btn">
+        Edit
+      </Link>
     </div>
-    
-  )
+  );
 };
