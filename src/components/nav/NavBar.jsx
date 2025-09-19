@@ -29,7 +29,10 @@ export const NavBar = ({ setIsLoggedIn }) => {
       <li className="nav-item"><Link to="/create">Create A Synth</Link></li>
       <li className="logout-nav">
         <span>
+          <Link to="/home">
           <img className="nav-user-img"src={user.imgUrl} alt={user.name}/>
+          </Link>
+          
         </span>
         <span className="current-user-nav">{user.name}
           <div>

@@ -1,9 +1,9 @@
-import { useEffect } from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { getUsers } from "../../services/userService";
 import { Link } from "react-router-dom";
 
 export const UserCard = () => {
+  const currentUserId = JSON.parse(localStorage.getItem("user"))?.id;
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -21,7 +21,9 @@ export const UserCard = () => {
           {
             return (
               <Link
-                to={`/collector/${user.id}`}
+                to={
+                  currentUserId === user.id ? "/home" : `/collector/${user.id}`
+                }
                 key={user.id}
                 className="user-card"
               >

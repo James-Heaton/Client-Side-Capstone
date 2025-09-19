@@ -37,3 +37,7 @@
     padding: 0.5rem;
     /* border-radius: 50%; */
 }
+
+.user-card-name {
+    margin: 1rem;
+    text-align: center;
