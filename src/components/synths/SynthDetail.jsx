@@ -1,12 +1,18 @@
 import { useEffect, useState } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { getSynthById } from "../../services/synthService";
+import {
+  addUserSynths,
+  getUserSynths,
+  deleteUserSynth,
+} from "../../services/userService";
 import "./SynthDetail.css";
 
 export const SynthDetail = () => {
   const { synthId } = useParams();
   const [synth, setSynth] = useState({});
   const [currentUser, setCurrentUser] = useState({});
+  const [userSynths, setUserSynths] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -22,6 +28,12 @@ export const SynthDetail = () => {
     setCurrentUser(localUserObject);
   }, []);
 
+  useEffect(() => {
+    getUserSynths().then((userSynthArr) => {
+      setUserSynths(userSynthArr);
+    });
+  }, []);
+
   const showEditBtn = () => {
     if (synth.user?.id === currentUser.id) {
       return (
@@ -31,6 +43,55 @@ export const SynthDetail = () => {
       );
     } else {
       return null;
+    }
+  };
+
+  const userHasThisSynth = userSynths
+    .filter((userSynth) => userSynth.userId === currentUser.id)
+    .filter((userSynth) => userSynth.synthId === synth.id);
+
+  const showCorrectButton = () => {
+    if (userHasThisSynth.length > 0) {
+      return (
+        <div>
+          <button onClick={handleRemoveSynth} className="add-btn">
+            Remove From Collection
+          </button>
+        </div>
+      );
+    } else {
+      return (
+        <div>
+          <button onClick={handleAddSynth} className="add-btn">
+            Add To Collection
+          </button>
+        </div>
+      );
+    }
+  };
+
+  const handleRemoveSynth = () => {
+    if (userHasThisSynth.length > 0) {
+      const userSynthToDelete = userHasThisSynth[0];
+      const userSynthId = userSynthToDelete.id;
+
+      deleteUserSynth(userSynthId).then(() => {
+        window.alert("Synth removed from collection.");
+        setUserSynths(userSynths.filter(userSynth => userSynth.id !== userSynthId))
+      });
+    }
+  };
+
+  const handleAddSynth = () => {
+    if (currentUser.id && synth.id) {
+      const newUserSynth = {
+        userId: currentUser.id,
+        synthId: synth.id,
+      };
+      addUserSynths(newUserSynth).then((res) => {
+        window.alert("Synth Added to Collection!");
+        setUserSynths([...userSynths, res])
+      });
     }
   };
 
@@ -49,10 +110,7 @@ export const SynthDetail = () => {
             alt={synth.name}
             className="synth-details-img"
           />
-          <div>
-            <button className="add-btn">Add To Collection</button>
-            {/* placeholder */}
-          </div>
+          <div>{showCorrectButton()}</div>
         </div>
         <div className="synth-details-right">
           <div className="synth-info">
