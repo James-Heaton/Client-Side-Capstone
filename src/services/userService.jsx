@@ -15,5 +15,17 @@ export const getUsers = () => {
 };
 
 export const getUserSynths = () => {
-  return fetch("http://localhost:8088/userSynths?_expand=user&_expand=synth").then((res) => res.json())
-}
+  return fetch(
+    "http://localhost:8088/userSynths?_expand=user&_expand=synth"
+  ).then((res) => res.json());
+};
+
+export const editUser = (user) => {
+  return fetch(`http://localhost:8088/users/${user.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(user),
+  }).then((res) => res.json());
+};

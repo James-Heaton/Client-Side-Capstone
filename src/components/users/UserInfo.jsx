@@ -26,6 +26,9 @@ export const UserInfo = () => {
           <p>{user.bio}</p>
         </div>
       </div>
+      <div>
+        <Link to="/collectors">Back</Link>
+      </div>
     </div>
   );
 };
@@ -55,7 +58,7 @@ export const UserHomeInfo = () => {
         </div>
       </div>
       <Link to="/edit-profile" className="synth-profile-btn">
-        Edit
+        Edit Profile
       </Link>
     </div>
   );

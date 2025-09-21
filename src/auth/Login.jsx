@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-// import { Link } from "react-router-dom"
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { getUserByEmail } from "../services/userService";
 
 export const Login = ({ setIsLoggedIn }) => {
   const [email, setEmail] = useState("");
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleLogin = (event) => {
     event.preventDefault();
@@ -21,6 +20,7 @@ export const Login = ({ setIsLoggedIn }) => {
         );
 
         setIsLoggedIn(true);
+        navigate("/")
       } else {
         window.alert("Invalid login");
       }
