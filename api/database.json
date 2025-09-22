@@ -260,7 +260,7 @@
       "description": "The first commercially successful digital FM synth - famous for its electric pianos and bell tones.",
       "yearMade": 1983,
       "imgUrl": "https://www.sketchappsources.com/resources/source-images-plus1/Yamaha-DX7-1.png",
-      "trackExample": "Take On Me” by a-ha"
+      "trackExample": "“Take On Me” by a-ha"
     },
     {
       "id": 6,
@@ -411,6 +411,16 @@
       "yearMade": 2007,
       "imgUrl": "https://media.sweetwater.com/m/products/image/c59af10a9chJoZRmUq4Al9R17wQJZHBGsX8P1QFl.jpg?v=c59af10a9c580a54",
       "trackExample": "“Collider” by Noisia"
+    },
+    {
+      "name": "Meowsic BX1025",
+      "userId": 11,
+      "characteristicId": 6,
+      "description": "The flagship cat-themed keyboard! Rivaled by none.",
+      "yearMade": 2025,
+      "imgUrl": "https://mybtoys.com/wp-content/uploads/BX1025_PR.png",
+      "trackExample": "\"Meowmix Theme\" by Tom and The Jerrys",
+      "id": 21
     }
   ],
   "characteristics": [
@@ -472,7 +482,7 @@
     },
     {
       "id": 15,
-      "characteristic": "Edgy"
+      "characteristic": "Sharp"
     },
     {
       "id": 16,

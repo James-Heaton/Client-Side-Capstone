@@ -37,10 +37,6 @@ export const EditUserForm = () => {
 
   return (
     <div className="edit-user">
-      {/* <div>
-        <img src={user.imgUrl} />
-        <h1>{user.name}</h1>
-      </div> */}
       <form className="edit-user-form">
         <fieldset>
           <div>
