@@ -19,5 +19,17 @@ export const addNewSynth = (newSynth) => {
 };
 
 export const getCharacteristics = () => {
-  return fetch("http://localhost:8088/characteristics").then((res) => res.json());
-}
+  return fetch("http://localhost:8088/characteristics").then((res) =>
+    res.json()
+  );
+};
+
+export const editSynth = (synth) => {
+  return fetch(`http://localhost:8088/synths/${synth.id}`, {
+    method: "PUT",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(synth),
+  });
+};

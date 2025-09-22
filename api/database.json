@@ -215,7 +215,7 @@
     {
       "id": 1,
       "name": "TB-303",
-      "userId": 11,
+      "userId": 1,
       "characteristicId": 5,
       "description": "Originally marketed as a bass accompaniment tool, the TB-303 became the cornerstone of acid house music thanks to its resonant, chirpy filter sweeps.",
       "yearMade": 1981,
@@ -413,14 +413,14 @@
       "trackExample": "“Collider” by Noisia"
     },
     {
+      "id": 21,
       "name": "Meowsic BX1025",
       "userId": 11,
-      "characteristicId": 6,
+      "characteristicId": 2,
       "description": "The flagship cat-themed keyboard! Rivaled by none.",
       "yearMade": 2025,
       "imgUrl": "https://mybtoys.com/wp-content/uploads/BX1025_PR.png",
-      "trackExample": "\"Meowmix Theme\" by Tom and The Jerrys",
-      "id": 21
+      "trackExample": "\"Meow Mix Theme\" by Tom and The Jerries\""
     }
   ],
   "characteristics": [

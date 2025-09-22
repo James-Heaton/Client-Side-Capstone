@@ -20,7 +20,7 @@ export const ApplicationViews = () => {
       <Route path="catalogue" element={<SynthCatalogue />} />
       <Route path="synth-detail/:synthId" element={<SynthDetail />} />
       <Route path="create" element={<CreateASynth />} />
-      <Route path="edit-synth" element={<EditSynth />} />
+      <Route path="edit-synth/:synthId" element={<EditSynth />} />
     </Routes>
   );
 };

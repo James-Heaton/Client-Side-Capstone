@@ -1,7 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { getUserById } from "../../services/userService";
-import { editUser } from "../../services/userService";
+import { getUserById, editUser } from "../../services/userService";
 
 export const EditUserForm = () => {
   const [user, setUser] = useState({});

@@ -37,7 +37,7 @@ export const SynthDetail = () => {
   const showEditBtn = () => {
     if (synth.user?.id === currentUser.id) {
       return (
-        <Link to="/edit-synth" className="synth-edit-btn">
+        <Link to={`/edit-synth/${synth.id}`} className="synth-edit-btn">
           Edit
         </Link>
       );

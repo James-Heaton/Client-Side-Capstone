@@ -36,24 +36,31 @@ export const CreateSynthForm = () => {
 
   const characteristicOptions = () => {
     return characteristics
-    .sort((a, b) => a.characteristic.localeCompare(b.characteristic))
-    .map((characteristic) => {
-      return (
-        <option key={characteristic.id} value={characteristic.id}>
-          {characteristic.characteristic}
-        </option>
-      );
-    });
+      .sort((a, b) => a.characteristic.localeCompare(b.characteristic))
+      .map((characteristic) => {
+        return (
+          <option key={characteristic.id} value={characteristic.id}>
+            {characteristic.characteristic}
+          </option>
+        );
+      });
   };
 
   const handleCreateSynth = (event) => {
     event.preventDefault();
+
+    const defaultImageUrl =
+      "https://static.vecteezy.com/system/resources/thumbnails/060/455/076/small_2x/piano-icon-piano-keyboard-piano-keyboard-icon-piano-keyboard-icon-piano-keyboard-icon-vector.jpg";
 
     const synthToSubmit = {
       ...newSynth,
       characteristicId: parseInt(newSynth.characteristicId),
       yearMade: parseInt(newSynth.yearMade),
       userId: parseInt(newSynth.userId),
+      imgUrl:
+        newSynth.imgUrl && newSynth.imgUrl.trim() !== ""
+          ? newSynth.imgUrl
+          : defaultImageUrl,
     };
 
     addNewSynth(synthToSubmit).then(() => {
@@ -82,7 +89,7 @@ export const CreateSynthForm = () => {
       <fieldset>
         <div>
           <label htmlFor="characteristic-select">
-            Notable Characteristic :{" "}
+            Notable Characteristic :
           </label>
           <select
             id="characteristic-select"

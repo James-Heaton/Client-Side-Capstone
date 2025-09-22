@@ -1,4 +1,4 @@
-import { CreateSynthForm } from "../forms/SynthForm"
+import { CreateSynthForm } from "../forms/CreateSynthForm"
 
 export const CreateASynth = () => {
     return (
