@@ -1,3 +1,4 @@
+import "./EditUser.css";
 import { useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { getUserById, editUser } from "../../services/userService";
@@ -35,11 +36,14 @@ export const EditUserForm = () => {
   };
 
   return (
-    <div className="edit-user">
-      <form className="edit-user-form">
+    <>
+      <form className="edit-user-fields">
         <fieldset>
           <div>
-            <label>Name : </label>
+            <div>
+              <label>Name : </label>
+            </div>
+            
             <input
               type="text"
               required
@@ -54,7 +58,10 @@ export const EditUserForm = () => {
         </fieldset>
         <fieldset>
           <div>
-            <label>Email : </label>
+            <div>
+              <label>Email : </label>
+            </div>
+            
             <div>
               <input
                 type="email"
@@ -71,7 +78,10 @@ export const EditUserForm = () => {
         </fieldset>
         <fieldset>
           <div>
-            <label>Profile Picture Url : </label>
+            <div>
+              <label>Profile Picture Url : </label>
+            </div>
+            
             <input
               type="text"
               value={user.imgUrl || ""}
@@ -85,8 +95,11 @@ export const EditUserForm = () => {
         </fieldset>
         <fieldset>
           <div>
-            <label>Bio : </label>
-            <input
+            <div>
+              <label>Bio : </label>
+            </div>
+            
+            <textarea
               type="text"
               value={user.bio || ""}
               onChange={(event) => {
@@ -115,6 +128,6 @@ Email must be a valid email address.`
           Save Changes
         </button>
       </form>
-    </div>
+    </>
   );
 };

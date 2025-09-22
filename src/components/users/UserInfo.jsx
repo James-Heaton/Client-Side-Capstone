@@ -1,10 +1,12 @@
+import "./UserProfile.css";
 import { getUserById } from "../../services/userService";
 import { useState, useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 export const UserInfo = () => {
   const { userId } = useParams();
   const [user, setUser] = useState({});
+  const navigate = useNavigate();
 
   useEffect(() => {
     getUserById(userId).then((userData) => {
@@ -27,7 +29,13 @@ export const UserInfo = () => {
         </div>
       </div>
       <div>
-        <Link to="/collectors">Back</Link>
+        {/* <Link to="/collectors">Back</Link> */}
+        <button
+          className="user-back-btn"
+          onClick={() => navigate("/collectors")}
+        >
+          Back
+        </button>
       </div>
     </div>
   );
@@ -35,6 +43,11 @@ export const UserInfo = () => {
 
 export const UserHomeInfo = () => {
   const [user, setUser] = useState({});
+  const navigate = useNavigate();
+
+  const handleBackClick = () => {
+    navigate(-1);
+  };
 
   useEffect(() => {
     const storedUser = JSON.parse(localStorage.getItem("user"));
@@ -57,9 +70,20 @@ export const UserHomeInfo = () => {
           <p>{user.bio}</p>
         </div>
       </div>
-      <Link to="/edit-profile" className="synth-profile-btn">
+      {/* <Link to="/edit-profile" className="synth-profile-btn">
         Edit Profile
-      </Link>
+      </Link> */}
+      <div className="user-edit-btns">
+          <button onClick={handleBackClick} className="synth-back-btn">
+            Back
+          </button>
+          <button
+            className="user-edit-btn"
+            onClick={() => navigate("/edit-profile")}
+          >
+            Edit Profile
+          </button>
+      </div>
     </div>
   );
 };
