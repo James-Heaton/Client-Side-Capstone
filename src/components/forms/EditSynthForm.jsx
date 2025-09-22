@@ -1,3 +1,4 @@
+import "./EditSynth.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import {
@@ -61,110 +62,137 @@ export const EditSynthForm = () => {
     });
   };
 
+  // const handleBackClick = () => {
+  //   navigate(`/synth-detail/${synth.id}`);
+  // };
+
   return (
-    <form className="edit-synth-form">
-      <fieldset>
-        <div>
-          <label>Name : </label>
-          <input
-            type="text"
-            required
-            value={synth.name || ""}
-            placeholder={synth.name}
-            onChange={(event) => {
-              const copy = { ...synth };
-              copy.name = event.target.value;
-              setSynth(copy);
-            }}
-          />
-        </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <label htmlFor="characteristic-select">
-            Notable Characteristic :
-          </label>
-          <select
-            id="characteristic-select"
-            required
-            name="characteristic"
-            value={synth.characteristicId || ""}
-            onChange={(event) => {
-              const copy = { ...synth };
-              copy.characteristicId = event.target.value;
-              setSynth(copy);
+    <>
+      <form className="edit-synth-fields">
+        <fieldset>
+          <div>
+            <div>
+              <label>Name : </label>
+            </div>
+            <input
+              type="text"
+              required
+              value={synth.name || ""}
+              placeholder={synth.name}
+              onChange={(event) => {
+                const copy = { ...synth };
+                copy.name = event.target.value;
+                setSynth(copy);
+              }}
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <div>
+              <label htmlFor="characteristic-select">
+                Notable Characteristic :
+              </label>
+            </div>
+
+            <select
+              id="characteristic-select"
+              required
+              name="characteristic"
+              value={synth.characteristicId || ""}
+              onChange={(event) => {
+                const copy = { ...synth };
+                copy.characteristicId = event.target.value;
+                setSynth(copy);
+              }}
+            >
+              <option value="">What does it sound like?</option>
+              {characteristicOptions()}
+            </select>
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <div>
+              <label>Featured In : </label>
+            </div>
+
+            <input
+              type="text"
+              required
+              value={synth.trackExample || ""}
+              placeholder={synth.trackExample}
+              onChange={(event) => {
+                const copy = { ...synth };
+                copy.trackExample = event.target.value;
+                setSynth(copy);
+              }}
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <div>
+              <label>Synth Image URL : </label>
+            </div>
+
+            <input
+              type="text"
+              value={synth.imgUrl || ""}
+              placeholder={synth.imgUrl}
+              onChange={(event) => {
+                const copy = { ...synth };
+                copy.imgUrl = event.target.value;
+                setSynth(copy);
+              }}
+            />
+          </div>
+        </fieldset>
+        <fieldset>
+          <div>
+            <div>
+              <label>Description : </label>
+            </div>
+
+            <textarea
+              type="text"
+              required
+              value={synth.description || ""}
+              placeholder={synth.description}
+              className="edit-synth-description"
+              onChange={(event) => {
+                const copy = { ...synth };
+                copy.description = event.target.value;
+                setSynth(copy);
+              }}
+            />
+          </div>
+        </fieldset>
+        <div className="synth-info-btns">
+          {/* <button onClick={handleBackClick} className="synth-back-btn">
+            Back
+          </button> */}
+          <button
+            className="synth-edit-btn"
+            onClick={(event) => {
+              event.preventDefault();
+              if (
+                synth.name &&
+                synth.characteristicId &&
+                synth.trackExample &&
+                synth.description
+              ) {
+                window.alert("Changed Saved!");
+                handleEditSynth(event);
+              } else {
+                window.alert(`All fields required!`);
+              }
             }}
           >
-            <option value="">What does it sound like?</option>
-            {characteristicOptions()}
-          </select>
+            Save Changes
+          </button>
         </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <label>Featured In : </label>
-          <input
-            type="text"
-            required
-            value={synth.trackExample || ""}
-            placeholder={synth.trackExample}
-            onChange={(event) => {
-              const copy = { ...synth };
-              copy.trackExample = event.target.value;
-              setSynth(copy);
-            }}
-          />
-        </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <label>Synth Image URL : </label>
-          <input
-            type="text"
-            value={synth.imgUrl || ""}
-            placeholder={synth.imgUrl}
-            onChange={(event) => {
-              const copy = { ...synth };
-              copy.imgUrl = event.target.value;
-              setSynth(copy);
-            }}
-          />
-        </div>
-      </fieldset>
-      <fieldset>
-        <div>
-          <label>Description : </label>
-          <input
-            type="text"
-            required
-            value={synth.description || ""}
-            placeholder={synth.description}
-            onChange={(event) => {
-              const copy = { ...synth };
-              copy.description = event.target.value;
-              setSynth(copy);
-            }}
-          />
-        </div>
-      </fieldset>
-      <button
-        onClick={(event) => {
-          event.preventDefault();
-          if (
-            synth.name &&
-            synth.characteristicId &&
-            synth.trackExample &&
-            synth.description
-          ) {
-            window.alert("Changed Saved!");
-            handleEditSynth(event);
-          } else {
-            window.alert(`All fields required!`);
-          }
-        }}
-      >
-        Save Changes
-      </button>
-    </form>
+      </form>
+    </>
   );
 };

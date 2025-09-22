@@ -2,9 +2,11 @@ import { EditSynthForm } from "../forms/EditSynthForm";
 
 export const EditSynth = () => {
   return (
-    <div>
+    <div className="edit-synth">
       <h1>Edit Synth</h1>
-      <EditSynthForm />
+      <div className="edit-synth-form">
+        <EditSynthForm />
+      </div>
     </div>
   );
 };

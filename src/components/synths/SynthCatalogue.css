@@ -2,8 +2,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: calc(100vh - 4rem);  /* Subtract navbar height */
+    margin-top: 7rem;            /* Push below fixed navbar */
 }
+
+@media (max-width: 768px) {
+    .synth-catalogue {
+        height: calc(100vh - 19rem);  /* Adjust for taller navbar */
+        margin-top: 14rem;            /* Adjust for taller navbar */
+    }
+}
+
 
 .synth-catalogue-cards {
     border: 2px solid rgb(196, 196, 196);
@@ -25,15 +34,22 @@
     flex-direction: row;
     align-items: center;
     margin: 1rem;
-    flex-shrink: 0;
+    /* flex-shrink: 0; */
 }
 
 .synth-card-img {
-    height: 8rem;
-    width: 8rem;
+    height: clamp(4rem, 10vw, 8rem);
+    width: clamp(4rem, 10vw, 8rem);
     object-fit: cover;
     margin: 1rem;
     border: 2px solid rgb(196, 196, 196);
     padding: 0.5rem;
     /* border-radius: 50%; */
+}
+
+.synth-card-name {
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem);
+    /* min: 0.8rem, preferred: 2.5% of viewport width, max: 1.2rem */
+    margin: 0;
+    padding: 0 0.5rem;
 }

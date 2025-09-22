@@ -30,7 +30,7 @@ export const SynthCard = () => {
             />
           </div>
           <div className="synth-card-name">
-            <h3>{synth.name}</h3>
+            <h3 >{synth.name}</h3>
           </div>
         </Link>
       ))}

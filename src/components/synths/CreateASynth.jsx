@@ -2,9 +2,12 @@ import { CreateSynthForm } from "../forms/CreateSynthForm"
 
 export const CreateASynth = () => {
     return (
-        <div>
+        <div className="create-synth">
             <h1>Create A Synth</h1>
-            <CreateSynthForm />
+            <div className="create-synth-form">
+                <CreateSynthForm />
+            </div>
+            
         </div>
     )
 }

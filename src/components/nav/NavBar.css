@@ -1,4 +1,9 @@
   .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -23,4 +28,24 @@
   border-radius: 50%;
   object-fit: cover;
   margin-right: 0.5rem;
+}
+
+/* Tablet and smaller */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;  /* Full width items */
+        gap: 0.5rem;          /* Space between items */
+    }
+
+    .logout-nav {
+        order: -1;  /* Moves to the beginning */
+    }
+}
+
+.nav-item {
+    font-size: clamp(0.8rem, 2.5vw, 1rem);
+    /* min: 0.8rem, preferred: 2.5% of viewport width, max: 1.2rem */
+    margin: 0;
+    padding: 0 0.5rem;
 }

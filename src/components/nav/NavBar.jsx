@@ -22,7 +22,7 @@ export const NavBar = ({ setIsLoggedIn }) => {
   }
   return (
     <ul className="navbar">
-      <li className="site-name-nav"><Link to="/">SynthFolio</Link></li>
+      <li className="nav-item"><Link to="/">SynthFolio</Link></li>
       <li className="nav-item"><Link to="/home">My Synths</Link></li>
       <li className="nav-item"><Link to="/collectors">Collectors</Link></li>
       <li className="nav-item"><Link to="/catalogue">Synth Catalogue</Link></li>
