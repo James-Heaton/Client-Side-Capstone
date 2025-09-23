@@ -136,3 +136,13 @@ html, body {
   height: 100vh;
   overflow: hidden;
 }
+
+@media (max-width: 768px) {
+  html,
+  body {
+    overflow: visible;
+  }
+  #root {
+    overflow: visible;
+  }
+}

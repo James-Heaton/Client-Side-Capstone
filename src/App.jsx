@@ -1,4 +1,3 @@
-import { Routes, Route } from "react-router-dom";
 import { Login } from "./auth/Login";
 import { useState } from "react";
 import { useEffect } from "react";

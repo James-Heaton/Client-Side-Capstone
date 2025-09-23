@@ -21,7 +21,7 @@
     display: flex;
     border: 2px solid rgb(196, 196, 196);
     width: 80%;
-    height: 48rem;
+    height: 42rem;
     justify-self: center;
     margin-top: 2rem;
     padding: 1rem;
@@ -31,7 +31,7 @@
 
 @media (max-width: 768px) {
     .create-synth-form {
-        height: calc(100vh - 24.2rem)
+        /* height: calc(100vh - 24.2rem) */
     }
 }
 

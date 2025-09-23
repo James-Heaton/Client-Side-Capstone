@@ -14,9 +14,9 @@
 }
 
 .user-synths {
-  border: 2px solid rgb(196, 196, 196);
+  /* border: 2px solid rgb(196, 196, 196); */
   width: 80%;
-  height: 48rem;
+  height: 40rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -29,7 +29,7 @@
 .user-info-block {
   display: flex;
   flex-direction: column;
-  border: 2px solid rgb(196, 196, 196);
+  /* border: 2px solid rgb(196, 196, 196); */
   height: 20rem;
   padding: 2rem;
   align-items: center;
@@ -56,7 +56,6 @@
 .no-synths-msg {
   margin-left: 15rem;
   margin-top: 5rem;
-
 }
 
 @media (max-width: 768px) {
@@ -64,16 +63,19 @@
     height: calc(100vh - 19rem); /* Adjust for taller navbar */
     margin-top: 14rem; /* Adjust for taller navbar */
     flex-direction: column; /* Stack vertically on small screens */
+    align-items: center;
   }
   .user-info-block {
     height: calc(100vh - 19rem); /* Adjust for taller navbar */
     margin-top: 2rem; /* Adjust for taller navbar */
     margin-left: 1rem;
     margin-right: 1rem;
+    width: 10rem;
   }
 
   .user-synths {
-    height: calc(100vh - 44rem);
+    height: auto;
+    overflow-y: visible;
   }
 
   .user-info-img {
@@ -91,9 +93,8 @@
 }
 
 .user-edit-btns {
-    margin: 1rem;
-    display: flex;
-    width: 12rem;
-    justify-content: space-around;
+  margin: 1rem;
+  display: flex;
+  width: 12rem;
+  justify-content: space-around;
 }
-

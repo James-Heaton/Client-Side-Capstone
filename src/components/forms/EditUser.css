@@ -21,18 +21,12 @@
     display: flex;
     border: 2px solid rgb(196, 196, 196);
     width: 80%;
-    height: 48rem;
+    height: 35rem;
     justify-self: center;
     margin-top: 2rem;
     padding: 1rem;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-@media (max-width: 768px) {
-    .edit-user-form {
-        height: calc(100vh - 24.2rem)
-    }
 }
 
 .edit-user-fields {
@@ -56,4 +50,10 @@
     padding: 0.5rem;
     margin-bottom: 1rem;
 
+}
+
+@media (max-width: 768px) {
+    .edit-user-form {
+        height: 35rem;
+    }
 }
