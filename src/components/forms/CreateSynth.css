@@ -29,12 +29,6 @@
     justify-content: center;
 }
 
-@media (max-width: 768px) {
-    .create-synth-form {
-        /* height: calc(100vh - 24.2rem) */
-    }
-}
-
 .create-synth-fields {
     display: flex;
     padding: 1rem;
