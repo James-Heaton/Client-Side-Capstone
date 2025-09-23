@@ -72,7 +72,7 @@
     },
     {
       "id": 11,
-      "name": "Jimmy Heaton",
+      "name": "James Heaton",
       "bio": "I like synths.",
       "email": "jheaton@nss.com",
       "imgUrl": "https://avatars.githubusercontent.com/u/213261719?v=4"
@@ -490,41 +490,6 @@
     }
   ],
   "userSynths": [
-    {
-      "id": 1,
-      "userId": 11,
-      "synthId": 3
-    },
-    {
-      "id": 2,
-      "userId": 11,
-      "synthId": 7
-    },
-    {
-      "id": 3,
-      "userId": 11,
-      "synthId": 12
-    },
-    {
-      "id": 4,
-      "userId": 11,
-      "synthId": 18
-    },
-    {
-      "id": 5,
-      "userId": 11,
-      "synthId": 4
-    },
-    {
-      "id": 6,
-      "userId": 11,
-      "synthId": 9
-    },
-    {
-      "id": 7,
-      "userId": 11,
-      "synthId": 15
-    },
     {
       "id": 8,
       "userId": 12,

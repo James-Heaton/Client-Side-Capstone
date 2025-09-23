@@ -1,3 +1,4 @@
+import "./UserProfile.css";
 import { getUserSynths } from "../../services/userService";
 import { getUserById } from "../../services/userService";
 import { useState, useEffect } from "react";
@@ -20,7 +21,10 @@ export const UserSynths = () => {
     });
   }, []);
 
-  return (
+  const thisUsersSynths = userSynths.filter((userSynth) => userSynth.user?.id === user.id)
+
+  if (thisUsersSynths.length > 0 ) {
+    return (
     <div className="user-synths-block">
       <h1>{user.name}'s Synth Collection</h1>
       <div className="user-synths">
@@ -50,6 +54,12 @@ export const UserSynths = () => {
       </div>
     </div>
   );
+  } else {
+    return (
+      <h1 className="no-synths-msg">{user.name} has not collected any synths yet!</h1>
+    )
+  }
+  
 };
 
 export const UserHomeSynths = () => {
@@ -69,7 +79,10 @@ export const UserHomeSynths = () => {
     });
   }, []);
 
-  return (
+  const thisUsersSynths = userSynths.filter((userSynth) => userSynth.user?.id === user.id)
+
+  if (thisUsersSynths.length > 0 ) {
+    return (
     <div className="user-synths-block">
       <h1>My Synth Collection</h1>
       <div className="user-synths">
@@ -99,4 +112,10 @@ export const UserHomeSynths = () => {
       </div>
     </div>
   );
+  } else {
+    return (
+      <h1 className="no-synths-msg">Visit the Synth Catalogue and start collecting!</h1>
+    )
+  }
+  
 };

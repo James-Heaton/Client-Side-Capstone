@@ -43,8 +43,6 @@
   object-fit: cover;
 }
 
-
-
 .user-edit-btn {
   border: 2px solid rgb(196, 196, 196);
   padding: 0.5rem;
@@ -53,6 +51,12 @@
 .user-back-btn {
   border: 2px solid rgb(196, 196, 196);
   padding: 0.5rem;
+}
+
+.no-synths-msg {
+  margin-left: 15rem;
+  margin-top: 5rem;
+
 }
 
 @media (max-width: 768px) {
@@ -77,6 +81,13 @@
     height: 10rem;
     object-fit: cover;
   }
+
+  .no-synths-msg {
+    height: calc(100vh - 19rem); /* Adjust for taller navbar */
+    margin-top: 2rem; /* Adjust for taller navbar */
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }
 
 .user-edit-btns {
@@ -85,3 +96,4 @@
     width: 12rem;
     justify-content: space-around;
 }
+
