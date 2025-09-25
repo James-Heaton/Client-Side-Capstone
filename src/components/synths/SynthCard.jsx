@@ -22,7 +22,7 @@ export const SynthCard = () => {
           key={synth.id}
           className="synth-card"
         >
-          <div>
+          <div className="synth-card-img-container">
             <img
               className="synth-card-img"
               src={synth.imgUrl}

@@ -26,7 +26,7 @@ export const UserSynths = () => {
   if (thisUsersSynths.length > 0 ) {
     return (
     <div className="user-synths-block">
-      <h1>{user.name}'s Synth Collection</h1>
+      <h1 className="collection-header">{user.name}'s Synth Collection</h1>
       <div className="user-synths">
         {userSynths &&
           Array.isArray(userSynths) &&
@@ -84,7 +84,7 @@ export const UserHomeSynths = () => {
   if (thisUsersSynths.length > 0 ) {
     return (
     <div className="user-synths-block">
-      <h1>My Synth Collection</h1>
+      <h1 className="collection-header">My Synth Collection</h1>
       <div className="user-synths">
         {userSynths &&
           Array.isArray(userSynths) &&
@@ -114,7 +114,7 @@ export const UserHomeSynths = () => {
   );
   } else {
     return (
-      <h1 className="no-synths-msg">Visit the Synth Catalogue and start collecting!</h1>
+      <h1 className="no-synths-msg">Visit the <Link to="/catalogue"><span className="no-synths-msg-link">Synth Catalogue</span></Link> and start collecting!</h1>
     )
   }
   

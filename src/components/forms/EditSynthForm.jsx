@@ -168,12 +168,8 @@ export const EditSynthForm = () => {
             />
           </div>
         </fieldset>
-        <div className="synth-info-btns">
-          {/* <button onClick={handleBackClick} className="synth-back-btn">
-            Back
-          </button> */}
           <button
-            className="synth-edit-btn"
+            className="save-synth-btn"
             onClick={(event) => {
               event.preventDefault();
               if (
@@ -191,7 +187,6 @@ export const EditSynthForm = () => {
           >
             Save Changes
           </button>
-        </div>
       </form>
     </>
   );

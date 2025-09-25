@@ -36,7 +36,7 @@ export const NavBar = ({ setIsLoggedIn }) => {
         </span>
         <span className="current-user-nav">{user.name}
           <div>
-            <button className="nav-logout"onClick={handleLogout}>Sign Out</button>
+            <button className="nav-logout-btn"onClick={handleLogout}>Sign Out</button>
           </div>
           
         </span>

@@ -3,13 +3,15 @@
   flex-direction: column;
   align-items: center;
   height: calc(100vh - 4rem); /* Subtract navbar height */
-  margin-top: 7rem; /* Push below fixed navbar */
+  margin-top: 8rem; /* Push below fixed navbar */
 }
 
 .synth-catalogue-cards {
-  /* border: 2px solid rgb(196, 196, 196); */
+  background: linear-gradient(-45deg, #0c0c0f, #575b82);
+  border-radius: 20px;
+  /* border: 1px solid #1b1c25; */
   width: 80%;
-  height: 45rem;
+  height: 49rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,16 +19,41 @@
   overflow-y: auto;
   padding: 1rem;
   margin-top: 2rem;
+  /* scrollbar-color: #e07a5f #81b29a; */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  margin-bottom: 2rem;
 }
 
-.synth-card {
-  border: 2px solid rgb(196, 196, 196);
+/* .synth-card {
+  background-color: #F4F1DE;
+  border-radius: 10px;
   width: 20rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 1rem;
-  /* flex-shrink: 0; */
+} */
+
+.synth-card {
+  box-shadow: 0px 0px 0px 0px rgba(34, 30, 40, 0);
+  background-color: #2b2d3e;
+  border-radius: 10px;
+  width: 19rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
+}
+
+.synth-card:hover {
+  transform: scale(1.01); /* Grows to 105% of original size */
+  box-shadow: 4px 4px 6px 2px rgba(24, 25, 32, 0.3);
 }
 
 .synth-card-img {
@@ -34,10 +61,10 @@
   width: clamp(4rem, 10vw, 8rem);
   object-fit: cover;
   margin: 1rem;
-  border: 2px solid rgb(196, 196, 196);
-  padding: 0.5rem;
-  /* border-radius: 50%; */
+  margin-left: 2rem;
+  border-radius: 8px;
 }
+
 
 .synth-card-name {
   font-size: clamp(0.8rem, 2.5vw, 1.2rem);
@@ -46,10 +73,17 @@
   padding: 0 0.5rem;
 }
 
-@media (max-width: 768px) {
+.catalogue-header {
+  color: #ffffff;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: x-large;
+}
+
+@media (max-width: 838px) {
   .synth-catalogue {
-    height: calc(100vh - 19rem); /* Adjust for taller navbar */
-    margin-top: 14rem; /* Adjust for taller navbar */
+    /* height: calc(100vh - 19rem); */
+    margin-top: 17rem; /* Adjust for taller navbar */
+    margin-bottom: 15rem;
   }
 
   .synth-card {
@@ -59,6 +93,11 @@
   }
 
   .synth-catalogue-cards {
+    height: auto;
     overflow-y: visible;
+  }
+
+  .synth-card-img {
+    margin: 1rem;
   }
 }

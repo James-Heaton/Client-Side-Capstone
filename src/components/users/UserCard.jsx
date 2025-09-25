@@ -35,7 +35,7 @@ export const UserCard = () => {
                   />
                 </div>
                 <div className="user-card-name">
-                  <h3>{user.name}</h3>
+                  <p>{user.name}</p>
                 </div>
               </Link>
             );
