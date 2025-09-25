@@ -77,7 +77,6 @@ export const CreateSynthForm = () => {
             <div>
               <label>Name : </label>
             </div>
-
             <input
               type="text"
               required
@@ -172,7 +171,7 @@ export const CreateSynthForm = () => {
           </div>
         </fieldset>
         <button
-          className="synth-edit-btn"
+          className="create-synth-btn"
           onClick={(event) => {
             event.preventDefault();
             if (

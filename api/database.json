@@ -115,7 +115,7 @@
     {
       "id": 17,
       "name": "Ernie Quasimodo",
-      "bio": "Amateur crytozoologist in possession of several low-res pictures of a reincarnated pterodactyl.",
+      "bio": "Amateur cryptozoologist in possession of several low-res pictures of a reincarnated pterodactyl.",
       "email": "tglidden@nss.com",
       "imgUrl": "https://randomuser.me/api/portraits/men/38.jpg"
     },
@@ -1274,6 +1274,46 @@
       "id": 164,
       "userId": 30,
       "synthId": 18
+    },
+    {
+      "userId": 11,
+      "synthId": 15,
+      "id": 165
+    },
+    {
+      "userId": 11,
+      "synthId": 4,
+      "id": 166
+    },
+    {
+      "userId": 11,
+      "synthId": 10,
+      "id": 167
+    },
+    {
+      "userId": 11,
+      "synthId": 11,
+      "id": 168
+    },
+    {
+      "userId": 11,
+      "synthId": 12,
+      "id": 169
+    },
+    {
+      "userId": 11,
+      "synthId": 19,
+      "id": 170
+    },
+    {
+      "userId": 11,
+      "synthId": 8,
+      "id": 171
+    },
+    {
+      "userId": 11,
+      "synthId": 17,
+      "id": 172
     }
   ]
 }

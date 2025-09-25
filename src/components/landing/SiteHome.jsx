@@ -1,10 +1,16 @@
 import "./SiteHome.css"
+import { Link } from "react-router-dom"
 
 export const SiteHomeWelcome = () => {
     return (
-        <div className="landing">
+        <div className="landing-whole">
+            <div className="landing">
             <h1 className="header">Welcome to SynthFolio</h1>
-            <p className="catchphrase">A place to collect, create, & love synthesizers</p>
+            <div className="catchphrase">
+                <p>A place to collect, create, & love</p> <p><Link to="/catalogue"><span className="catchphrase-link">Synthesizers</span></Link></p>
+            </div>
         </div>
+        </div>
+        
     )
 }

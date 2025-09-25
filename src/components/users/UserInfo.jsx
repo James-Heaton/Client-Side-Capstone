@@ -1,7 +1,7 @@
 import "./UserProfile.css";
 import { getUserById } from "../../services/userService";
 import { useState, useEffect } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 export const UserInfo = () => {
   const { userId } = useParams();
@@ -19,16 +19,16 @@ export const UserInfo = () => {
       <div className="user-info-block-top">
         <img src={user.imgUrl} alt={user.name} className="user-info-img" />
       </div>
-      <div>
+      <div className="user-profile-name">
         <h1>{user.name}</h1>
       </div>
       <div className="user-info-block-bottom">
-        <h2>Bio :</h2>
+        {/* <h2>Bio :</h2> */}
         <div className="bio-block">
           <p>{user.bio}</p>
         </div>
       </div>
-      <div>
+      <div className="user-back-btns">
         {/* <Link to="/collectors">Back</Link> */}
         <button
           className="user-back-btn"
@@ -61,11 +61,11 @@ export const UserHomeInfo = () => {
       <div className="user-info-block-top">
         <img src={user.imgUrl} alt={user.name} className="user-info-img" />
       </div>
-      <div>
+      <div className="user-profile-name">
         <h1>{user.name}</h1>
       </div>
       <div className="user-info-block-bottom">
-        <h2>Bio :</h2>
+        {/* <h2>Bio :</h2> */}
         <div className="bio-block">
           <p>{user.bio}</p>
         </div>
@@ -74,7 +74,7 @@ export const UserHomeInfo = () => {
         Edit Profile
       </Link> */}
       <div className="user-edit-btns">
-          <button onClick={handleBackClick} className="synth-back-btn">
+          <button onClick={handleBackClick} className="user-back-btn">
             Back
           </button>
           <button

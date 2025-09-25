@@ -1,94 +1,182 @@
 .synth-details-whole {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: calc(100vh - 4rem);  /* Subtract navbar height */
-    margin-top: 7rem;            /* Push below fixed navbar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 4rem); /* Subtract navbar height */
+  margin-top: 8rem; /* Push below fixed navbar */
 }
 
-@media (max-width: 768px) {
-    .synth-details-whole {
-        height: calc(100vh - 19rem);  /* Adjust for taller navbar */
-        margin-top: 14rem;            /* Adjust for taller navbar */
-    }
-}
-
-.synth-name {
-    margin: 2rem;
+.synth-header {
+  color: #ffffff;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: x-large;
 }
 
 .synth-details {
-    display: flex;
-    flex-direction: row;
-    /* border: 2px solid rgb(196, 196, 196); */
-    width: 80%;
-    height: 48rem;
-    justify-self: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    flex-wrap: wrap;
-    justify-content: center;
-    /* gap: 1rem; */
-}
-
-@media (max-width: 768px) {
-    .synth-details {
-        flex-direction: column; /* Stack vertically on small screens */
-        height: auto; /* Let height adjust to content */
-    }
+  display: flex;
+  flex-direction: row;
+  /* border: 2px solid rgb(196, 196, 196); */
+  width: 80%;
+  height: 48rem;
+  justify-self: center;
+  /* margin-top: 2rem; */
+  padding: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4rem;
 }
 
 .synth-details-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+  background: #575b82;
+  border-radius: 20px 3px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  margin-top: 1rem;
+  padding: 2rem; /* Add padding instead of margin on the image */
+  padding-bottom: 2.5rem;
+  height: fit-content; /* Shrinks to content size */
 }
 
 .synth-details-img {
-    width: clamp(12rem, 40vw, 30rem); /* Responsive image size */
-    padding: 1rem;
-    border: 2px solid rgb(196, 196, 196);
-    margin: 1rem;
+  width: 90%; /* Relative to parent container */
+  max-width: 30rem; /* Still has a maximum */
+  min-width: 12rem; /* Still has a minimum */
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+  height: auto; /* Maintains aspect ratio */
 }
 
 .synth-details-right {
-    flex: 1;
-    padding-left: 1rem;
-    padding-right: 1rem;
+  flex: 1;
+  /* padding-right: 1rem; */
 }
 
 .synth-info {
-    border: 2px solid rgb(196, 196, 196);
-    padding: clamp(1rem, 3vw, 3rem); /* Responsive padding */
-    margin-top: 1rem;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: clamp(0.8rem, 2.5vw, 1rem);
+  background: linear-gradient(-45deg, #0c0c0f, #575b82);
+  border-radius: 3px 20px 20px 20px;
+  padding: clamp(2.7rem, 3vw, 4rem); /* Responsive padding */
+  margin-top: 1rem;
+  /* margin-left: 2rem; */
+  width: 100%;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5rem;
 }
 
 .synth-description {
-    border: 2px solid rgb(196, 196, 196);
-    padding: 1rem;
+  /* margin: 1rem; */
+  color: #ffffff;
+  background-color: #81B29A;
+  border-radius: 1px 8px 8px 8px;
+  padding: 1rem;
+  text-align: center;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-style: oblique;
+  line-height: 1.5rem;
 }
 
 .description {
-    margin: 1.5rem;
+  margin: 1.5rem 0rem 1.5rem 0rem;
 }
 
 .synth-info-btns {
-    display: flex;
-    flex-direction: row;
-    margin-top: 1rem;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  margin-top: 1rem;
+  justify-content: space-between;
 }
 
 .synth-back-btn {
-    border: 2px solid rgb(196, 196, 196);
-    padding: 0.5rem;
+  background-color: #21212d;
+  border: none;
+  color: #f4f1de;
+  border-radius: 5px;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.65rem;
+  /* box-shadow: 1px 1px 5px 1px #d5d3c2; */
+  transition: background-color 0.3s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+
+.synth-back-btn:hover {
+  background-color: #e07a5f;
+  color: #ffffff;
 }
 
 .synth-edit-btn {
-    border: 2px solid rgb(196, 196, 196);
-    padding: 0.5rem;
+  background-color: #3d405b;
+  border: none;
+  color: #f4f1de;
+  border-radius: 5px;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.65rem;
+  /* box-shadow: 1px 1px 5px 1px #d5d3c2; */
+  transition: background-color 0.3s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+
+.synth-edit-btn:hover {
+  background-color: #e07a5f;
+  color: #ffffff;
+}
+
+.add-btn {
+  background-color: #81B29A;
+  border: none;
+  color: #f4f1de;
+  border-radius: 5px;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 2.5rem;
+  transition: background-color 0.3s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+
+.add-btn:hover {
+  background-color: #E07A5F;
+  color: #ffffff;
+}
+
+/* .synth-info-btns {
+    justify-self: center;
+    width: 26.6rem;
+} */
+
+@media (max-width: 838px) {
+  .synth-details-whole {
+    height: calc(100vh - 19rem); /* Adjust for taller navbar */
+    margin-top: 17rem; /* Adjust for taller navbar */
+  }
+
+  .synth-details {
+    flex-direction: column; /* Stack vertically on small screens */
+    height: auto; /* Let height adjust to content */
+  }
+
+    .synth-details-left {
+        border-radius: 20px;
+    }
+
+    .synth-info {
+        margin-top: 0rem;
+        border-radius: 20px;
+        padding: clamp(3rem, 3vw, 4rem);
+    }
 }
