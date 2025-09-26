@@ -1,0 +1,128 @@
+.edit-synth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 4rem); /* Subtract navbar height */
+  margin-top: 8rem; /* Push below fixed navbar */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #ffffff;
+}
+
+.signup-line {
+  width: 80%;
+  margin: 3rem auto 0;
+  border-bottom: 1px solid #575b82;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.edit-header {
+    font-size: x-large;
+}
+
+.save-synth-btn {
+  background-color: #81b29a;
+  border: none;
+  color: #f4f1de;
+  border-radius: 5px;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.65rem;
+  /* box-shadow: 1px 1px 5px 1px #d5d3c2; */
+  transition: background-color 0.3s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+
+.save-synth-btn:hover {
+  background-color: #e07a5f;
+  color: #ffffff;
+}
+
+.synth-name {
+  margin: 2rem;
+}
+
+.edit-synth-form {
+  display: flex;
+  background: linear-gradient(-45deg, #0c0c0f, #575b82);
+  border-radius: 20px;
+  height: 46rem;
+  justify-self: center;
+  margin-top: 2rem;
+  padding: clamp(0.5rem, 2vw, 1rem);
+  flex-wrap: wrap;
+  justify-content: center;
+  width: clamp(20rem, 80vw, 40rem);
+  max-width: 95vw;
+}
+
+.edit-synth-fields {
+  display: flex;
+  padding: clamp(0.5rem, 2vw, 1rem);
+  flex-direction: column;
+  line-height: 2rem;
+  margin-top: 1rem;
+  width: 95%;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.edit-synth-fields input,
+.edit-synth-fields textarea,
+.edit-synth-fields select {
+  width: clamp(15rem, 70vw, 30rem);
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #2b2d3e;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  color: #ffffff;
+  transition: 0.3s ease;
+}
+
+form.edit-synth-fields input::placeholder,
+form.edit-synth-fields textarea::placeholder {
+  color: #9497b1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.9rem;
+  opacity: 1;
+}
+
+.edit-synth-fields select:invalid {
+  color: #9497b1;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-size: 0.9rem;
+  opacity: 1
+}
+
+.edit-synth-fields input:focus,
+.edit-synth-fields textarea:focus,
+.edit-synth-fields select:focus {
+  outline: none;
+  border: 1px solid #9497b1;
+  box-shadow: none;
+}
+
+.edit-synth-fields input:hover,
+.edit-synth-fields textarea:hover,
+.edit-synth-fields select:hover {
+  outline: none;
+  border: 1px solid #575b82;
+  box-shadow: none;
+}
+
+textarea {
+  resize: none;
+}
+
+@media (max-width: 838px) {
+  .edit-synth {
+    height: calc(100vh - 5rem); /* Adjust for taller navbar */
+    margin-top: 17rem; /* Adjust for taller navbar */
+  }
+}
