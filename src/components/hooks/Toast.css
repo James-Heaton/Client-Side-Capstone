@@ -29,6 +29,10 @@
   top: 25px;
 }
 
+.signup-toast {
+  top: 56px;
+}
+
 .toast-closing {
   animation: slideOut 0.3s ease forwards;
 }

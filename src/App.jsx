@@ -4,8 +4,11 @@ import { CreateUserForm } from "./components/forms/UserForm";
 import { useState, useEffect } from "react";
 import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./views/ApplicationViews";
+import { useScrollToTop } from "./components/hooks/ScrollToTop";
 
 export const App = () => {
+  useScrollToTop()
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {

@@ -128,6 +128,7 @@
   border: 1px solid transparent;
   border-radius: 10px;
   color: #ffffff;
+  transition: 0.3s ease;
 }
 
 form.new-form-login input::placeholder {
@@ -149,5 +150,11 @@ form.new-form-login input::placeholder {
 .new-form-login input:focus {
   outline: none;
   border: 1px solid #9497b1;
+  box-shadow: none;
+}
+
+.new-form-login input:hover {
+  outline: none;
+  border: 1px solid #575b82;
   box-shadow: none;
 }

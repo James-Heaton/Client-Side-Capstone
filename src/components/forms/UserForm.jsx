@@ -166,17 +166,16 @@ export const EditUserForm = () => {
             Save Changes
           </button>
         </div>
-        
       </form>
       <div>
-          {toast && (
-            <Toast
-              message={toast.message}
-              type={toast.type}
-              onClose={hideToast}
-            />
-          )}
-        </div>
+        {toast && (
+          <Toast
+            message={toast.message}
+            type={toast.type}
+            onClose={hideToast}
+          />
+        )}
+      </div>
     </>
   );
 };
@@ -220,12 +219,11 @@ export const CreateUserForm = ({ setIsLoggedIn }) => {
 
   return (
     <div className="edit-user">
-      
       <div className="edit-user-form">
         <h1 className="edit-header">Sign Up</h1>
-       
+
         <form className="edit-user-fields">
-           <div className="signup-line"></div>
+          <div className="signup-line"></div>
           <fieldset>
             <div>
               <div>
@@ -356,6 +354,7 @@ export const CreateUserForm = ({ setIsLoggedIn }) => {
               message={toast.message}
               type={toast.type}
               onClose={hideToast}
+              customClass="signup-toast"
             />
           )}
         </div>

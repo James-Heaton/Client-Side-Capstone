@@ -82,6 +82,7 @@
   border: 1px solid transparent;
   border-radius: 10px;
   color: #ffffff;
+  transition: 0.3s ease;
 }
 
 form.edit-synth-fields input::placeholder,
@@ -104,6 +105,14 @@ form.edit-synth-fields textarea::placeholder {
 .edit-synth-fields select:focus {
   outline: none;
   border: 1px solid #9497b1;
+  box-shadow: none;
+}
+
+.edit-synth-fields input:hover,
+.edit-synth-fields textarea:hover,
+.edit-synth-fields select:hover {
+  outline: none;
+  border: 1px solid #575b82;
   box-shadow: none;
 }
 

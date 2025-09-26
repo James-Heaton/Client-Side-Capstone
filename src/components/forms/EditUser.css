@@ -68,7 +68,7 @@
 }
 
 .sign-up-btn:hover {
-  background-color: #e07a5f;
+  background-color: #E07A5F;
   color: #ffffff;
 }
 
@@ -132,6 +132,7 @@
   border: 1px solid transparent;
   border-radius: 10px;
   color: #ffffff;
+  transition: 0.3s ease;
 }
 
 form.edit-user-fields input::placeholder,
@@ -154,6 +155,14 @@ form.edit-user-fields textarea::placeholder {
 .edit-user-fields select:focus {
   outline: none;
   border: 1px solid #9497b1;
+  box-shadow: none;
+}
+
+.edit-user-fields input:hover,
+.edit-user-fields textarea:hover,
+.edit-user-fields select:hover {
+  outline: none;
+  border: 1px solid #575b82;
   box-shadow: none;
 }
 
