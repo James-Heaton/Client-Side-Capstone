@@ -75,8 +75,8 @@
       "name": "James Heaton",
       "bio": "I like synths.",
       "email": "jheaton@nss.com",
-      "imgUrl": "https://avatars.githubusercontent.com/u/213261719?v=4",
-      "password": "SynthFolioPassword"
+      "password": "SynthFolioPassword",
+      "imgUrl": "https://avatars.githubusercontent.com/u/213261719?v=4"
     },
     {
       "id": 12,
@@ -147,8 +147,8 @@
       "name": "Merlin Mumford",
       "bio": "I practice various forms of mystical arts while maintaining a practical business sense.",
       "email": "mmumford@nss.com",
-      "imgUrl": "https://m.media-amazon.com/images/I/711K4k+lJHL._UY1000_.jpg",
-      "password": "SynthFolioPassword"
+      "password": "SynthFolioPassword",
+      "imgUrl": "https://m.media-amazon.com/images/I/711K4k+lJHL._UY1000_.jpg"
     },
     {
       "id": 21,

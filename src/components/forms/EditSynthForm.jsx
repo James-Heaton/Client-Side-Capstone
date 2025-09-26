@@ -6,6 +6,7 @@ import {
   editSynth,
   getCharacteristics,
 } from "../../services/synthService";
+import { useToast, Toast } from "../hooks/Toast";
 
 export const EditSynthForm = () => {
   const navigate = useNavigate();
@@ -37,6 +38,8 @@ export const EditSynthForm = () => {
       });
   };
 
+  const { toast, showToast, hideToast } = useToast();
+
   const handleEditSynth = (event) => {
     event.preventDefault();
 
@@ -61,10 +64,6 @@ export const EditSynthForm = () => {
       navigate(`/synth-detail/${synth.id}`);
     });
   };
-
-  // const handleBackClick = () => {
-  //   navigate(`/synth-detail/${synth.id}`);
-  // };
 
   return (
     <>
@@ -168,6 +167,13 @@ export const EditSynthForm = () => {
             />
           </div>
         </fieldset>
+        <div className="sign-up-btns">
+            <button 
+            className="sign-up-back-btn"
+            onClick={() => navigate(`/synth-detail/${synth.id}`)}
+            >
+              Back
+            </button>
           <button
             className="save-synth-btn"
             onClick={(event) => {
@@ -178,16 +184,26 @@ export const EditSynthForm = () => {
                 synth.trackExample &&
                 synth.description
               ) {
-                window.alert("Changed Saved!");
+                // window.alert("Changed Saved!");
                 handleEditSynth(event);
               } else {
-                window.alert(`All fields required!`);
+                showToast(`All fields required!`, "error");
               }
             }}
           >
             Save Changes
           </button>
+          </div>
       </form>
+      <div>
+                {toast && (
+                  <Toast
+                    message={toast.message}
+                    type={toast.type}
+                    onClose={hideToast}
+                  />
+                )}
+              </div>
     </>
   );
 };

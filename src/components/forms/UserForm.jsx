@@ -23,6 +23,8 @@ export const EditUserForm = () => {
     }
   }, []);
 
+  const { toast, showToast, hideToast } = useToast();
+
   const handleSave = (event) => {
     event.preventDefault();
 
@@ -142,29 +144,38 @@ export const EditUserForm = () => {
           </div>
         </fieldset>
         <div className="sign-up-btns">
-            <button 
+          <button
             className="sign-up-back-btn"
             onClick={() => navigate("/home")}
-            >
-              Back
-            </button>
-            <button
-          className="save-changes-btn"
-          onClick={(event) => {
-            event.preventDefault();
-            if (user.name && user.email && isValidEmail(user.email)) {
-              window.alert("Changes Saved");
-              handleSave(event);
-            } else {
-              window.alert(`Name and valid email address required.`);
-            }
-          }}
-        >
-          Save Changes
-        </button>
-          </div>
+          >
+            Back
+          </button>
+          <button
+            className="save-changes-btn"
+            onClick={(event) => {
+              event.preventDefault();
+              if (user.name && user.email && isValidEmail(user.email)) {
+                // window.alert("Changes Saved");
+                handleSave(event);
+              } else {
+                showToast(`Name and valid email address required.`, "error");
+              }
+            }}
+          >
+            Save Changes
+          </button>
+        </div>
         
       </form>
+      <div>
+          {toast && (
+            <Toast
+              message={toast.message}
+              type={toast.type}
+              onClose={hideToast}
+            />
+          )}
+        </div>
     </>
   );
 };
@@ -252,26 +263,26 @@ export const CreateUserForm = ({ setIsLoggedIn }) => {
             </div>
           </fieldset>
           <fieldset>
-          <div>
             <div>
-              <label>Password</label>
-            </div>
+              <div>
+                <label>Password</label>
+              </div>
 
-            <div>
-              <input
-                type="password"
-                required
-                value={newUser.password}
-                placeholder="password"
-                onChange={(event) => {
-                  const copy = { ...newUser };
-                  copy.password = event.target.value;
-                  setNewUser(copy);
-                }}
-              />
+              <div>
+                <input
+                  type="password"
+                  required
+                  value={newUser.password}
+                  placeholder="password"
+                  onChange={(event) => {
+                    const copy = { ...newUser };
+                    copy.password = event.target.value;
+                    setNewUser(copy);
+                  }}
+                />
+              </div>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
           <fieldset>
             <div>
               <div>
@@ -309,10 +320,7 @@ export const CreateUserForm = ({ setIsLoggedIn }) => {
             </div>
           </fieldset>
           <div className="sign-up-btns">
-            <button 
-            className="sign-up-back-btn"
-            onClick={() => navigate(-1)}
-            >
+            <button className="sign-up-back-btn" onClick={() => navigate(-1)}>
               Back
             </button>
             <button

@@ -18,12 +18,8 @@ export const Login = ({ setIsLoggedIn }) => {
         const user = foundUsers[0];
 
         if (user.password === password) {
-          localStorage.setItem(
-            "user",
-            JSON.stringify({
-              id: user.id,
-            })
-          );
+          localStorage.setItem("user", JSON.stringify({ id: user.id }));
+          localStorage.setItem("fromLogin", "true");
           setIsLoggedIn(true);
           navigate("/home");
         } else {

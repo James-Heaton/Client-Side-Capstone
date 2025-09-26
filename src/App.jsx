@@ -9,11 +9,11 @@ export const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   useEffect(() => {
-    const user = localStorage.getItem("user");
-    if (user) {
-      setIsLoggedIn(true);
-    }
-  }, []);
+  const user = localStorage.getItem("user");
+  if (user) {
+    setIsLoggedIn(true);
+  }
+}, []);
 
   return (
     <div>

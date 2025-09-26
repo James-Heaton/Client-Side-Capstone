@@ -1,7 +1,9 @@
 import "./UserProfile.css";
 import { getUserById } from "../../services/userService";
 import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
+import { useToast, Toast } from "../hooks/Toast";
+
 
 export const UserInfo = () => {
   const { userId } = useParams();
@@ -23,13 +25,11 @@ export const UserInfo = () => {
         <h1>{user.name}</h1>
       </div>
       <div className="user-info-block-bottom">
-        {/* <h2>Bio :</h2> */}
         <div className="bio-block">
           <p>{user.bio}</p>
         </div>
       </div>
       <div className="user-back-btns">
-        {/* <Link to="/collectors">Back</Link> */}
         <button
           className="user-back-btn"
           onClick={() => navigate("/collectors")}
@@ -44,6 +44,25 @@ export const UserInfo = () => {
 export const UserHomeInfo = () => {
   const [user, setUser] = useState({});
   const navigate = useNavigate();
+  const location = useLocation();
+  const { toast, showToast, hideToast } = useToast();
+
+  useEffect(() => {
+    if (location.state?.successMessage) {
+      showToast(location.state.successMessage, 'success');
+      // Clear the state so it doesn't show again on refresh
+      window.history.replaceState({}, document.title);
+    }
+  }, [location.state]);
+
+  // Capture and preserve the fromLogin state across re-renders
+  const [showBackButton] = useState(() => {
+    const fromLogin = localStorage.getItem("fromLogin") === "true";
+    if (fromLogin) {
+      localStorage.removeItem("fromLogin");
+    }
+    return !fromLogin; // Return whether to show the back button
+  });
 
   const handleBackClick = () => {
     navigate(-1);
@@ -65,25 +84,31 @@ export const UserHomeInfo = () => {
         <h1>{user.name}</h1>
       </div>
       <div className="user-info-block-bottom">
-        {/* <h2>Bio :</h2> */}
         <div className="bio-block">
           <p>{user.bio}</p>
         </div>
       </div>
-      {/* <Link to="/edit-profile" className="synth-profile-btn">
-        Edit Profile
-      </Link> */}
       <div className="user-edit-btns">
+        {showBackButton && (
           <button onClick={handleBackClick} className="user-back-btn">
             Back
           </button>
-          <button
-            className="user-edit-btn"
-            onClick={() => navigate("/edit-profile")}
-          >
-            Edit Profile
-          </button>
+        )}
+
+        <button
+          className="user-edit-btn"
+          onClick={() => navigate("/edit-profile")}
+        >
+          Edit Profile
+        </button>
       </div>
+      {toast && (
+        <Toast 
+          message={toast.message} 
+          type={toast.type} 
+          onClose={hideToast} 
+        />
+      )}
     </div>
   );
 };

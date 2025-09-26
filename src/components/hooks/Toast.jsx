@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 export const Toast = ({ message, type = 'success', duration = 3000, onClose, customClass }) => {
     useEffect(() => {
@@ -22,9 +22,9 @@ export const Toast = ({ message, type = 'success', duration = 3000, onClose, cus
 export const useToast = () => {
     const [toast, setToast] = useState(null);
 
-    const showToast = (message, type = 'success') => {
+    const showToast = useCallback((message, type = 'success') => {
         setToast({ message, type, id: Date.now() })
-    };
+    }, []);
 
     const hideToast = () => {
         setToast(null);
