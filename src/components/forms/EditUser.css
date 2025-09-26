@@ -9,16 +9,25 @@
   color: #ffffff;
 }
 
+.signup-line {
+  width: 80%;
+  margin: 3rem auto 0;
+  border-bottom: 1px solid #575b82;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
 .edit-header {
     font-size: x-large;
+    margin-top: 3rem;
 }
 
 .sign-up-btns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 70%;
-  margin-top: 0.5rem;
+  width: 79%;
+  margin-top: 1rem;
 }
 
 .sign-up-back-btn {
@@ -43,7 +52,7 @@
 }
 
 .sign-up-btn {
-  background-color: #3d405b;
+  background-color: #81b29a;
   border: none;
   color: #ffffff;
   border-radius: 5px;
@@ -91,19 +100,19 @@
   display: flex;
   background: linear-gradient(-45deg, #0c0c0f, #575b82);
   border-radius: 20px;
-  height: 35.2rem;
+  height: 46rem;
   justify-self: center;
   margin-top: 2rem;
   padding: clamp(0.5rem, 2vw, 1rem);
   flex-wrap: wrap;
   justify-content: center;
-  width: clamp(20rem, 80vw, 45rem);
+  width: clamp(20rem, 80vw, 40rem);
   max-width: 95vw;
 }
 
 .edit-user-fields {
   display: flex;
-  padding: clamp(0.5rem, 2vw, 1rem);
+  padding: clamp(0.5rem, 3vw, 1rem);
   flex-direction: column;
   line-height: 2rem;
   margin-top: 1rem;
@@ -152,9 +161,9 @@ textarea {
   resize: none;
 }
 
-@media (max-width: 838px) {
+/* @media (max-width: 838px) {
   .edit-user {
-    height: calc(100vh - 5rem); /* Adjust for taller navbar */
+    height: calc(100vh - 5rem);
     margin-top: 17rem;
   }
-}
+} */

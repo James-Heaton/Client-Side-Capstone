@@ -51,6 +51,7 @@ export const EditUserForm = () => {
   return (
     <>
       <form className="edit-user-fields">
+        <div className="signup-line"></div>
         <fieldset>
           <div>
             <div>
@@ -219,9 +220,12 @@ export const CreateUserForm = ({ setIsLoggedIn }) => {
 
   return (
     <div className="edit-user">
-      <h1 className="edit-header">Sign Up</h1>
+      
       <div className="edit-user-form">
+        <h1 className="edit-header">Sign Up</h1>
+       
         <form className="edit-user-fields">
+           <div className="signup-line"></div>
           <fieldset>
             <div>
               <div>

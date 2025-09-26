@@ -9,8 +9,17 @@
   color: #ffffff;
 }
 
+.signup-line {
+  width: 80%;
+  margin: 3rem auto 0;
+  border-bottom: 1px solid #575b82;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+}
+
 .create-header {
     font-size: x-large;
+    margin-top: 3rem;
 }
 
 .create-synth-btn {
@@ -42,13 +51,13 @@
   display: flex;
   background: linear-gradient(-45deg, #0c0c0f, #575b82);
   border-radius: 20px;
-  height: 42.2rem;
+  height: 46rem;
   justify-self: center;
   margin-top: 2rem;
   padding: clamp(0.5rem, 2vw, 1rem);
   flex-wrap: wrap;
   justify-content: center;
-  width: clamp(20rem, 80vw, 45rem);
+  width: clamp(20rem, 80vw, 40rem);
   max-width: 95vw;
 }
 
@@ -56,8 +65,8 @@
   display: flex;
   padding: clamp(0.5rem, 2vw, 1rem);
   flex-direction: column;
-  line-height: 3rem;
-  margin-top: 1rem;
+  line-height: 2rem;
+  /* margin-top: 0.5rem; */
   width: 95%;
   align-items: center;
   margin-bottom: 1rem;

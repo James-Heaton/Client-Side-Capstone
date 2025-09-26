@@ -76,6 +76,7 @@ export const CreateSynthForm = () => {
   return (
     <>
       <form className="create-synth-fields">
+        <div className="signup-line"></div>
         <fieldset>
           <div>
             <div>

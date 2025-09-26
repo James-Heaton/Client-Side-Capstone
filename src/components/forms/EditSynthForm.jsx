@@ -68,6 +68,7 @@ export const EditSynthForm = () => {
   return (
     <>
       <form className="edit-synth-fields">
+        <div className="signup-line"></div>
         <fieldset>
           <div>
             <div>
