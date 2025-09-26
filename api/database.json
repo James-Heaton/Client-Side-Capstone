@@ -447,7 +447,7 @@
       "characteristicId": 2,
       "description": "The flagship cat-themed keyboard! Rivaled by none.",
       "yearMade": 2025,
-      "imgUrl": "https://mybtoys.com/wp-content/uploads/BX1025_PR.png",
+      "imgUrl": "https://m.media-amazon.com/images/I/619qtTKWlHL.jpg",
       "trackExample": "\"Meow Mix Theme\" by Tom and The Jerries\""
     }
   ],
@@ -1339,11 +1339,6 @@
       "id": 174
     },
     {
-      "userId": 11,
-      "synthId": 15,
-      "id": 175
-    },
-    {
       "userId": 20,
       "synthId": 2,
       "id": 176
@@ -1357,6 +1352,16 @@
       "userId": 11,
       "synthId": 6,
       "id": 178
+    },
+    {
+      "userId": 11,
+      "synthId": 15,
+      "id": 179
+    },
+    {
+      "userId": 11,
+      "synthId": 2,
+      "id": 180
     }
   ]
 }
