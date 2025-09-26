@@ -99,6 +99,10 @@
   box-shadow: none;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (max-width: 838px) {
   .create-synth {
     height: calc(100vh - 5rem); /* Adjust for taller navbar */

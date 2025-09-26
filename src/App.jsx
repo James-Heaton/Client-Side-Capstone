@@ -1,6 +1,7 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Login } from "./auth/Login";
-import { useState } from "react";
-import { useEffect } from "react";
+import { CreateUserForm } from "./components/forms/UserForm";
+import { useState, useEffect } from "react";
 import { NavBar } from "./components/nav/NavBar";
 import { ApplicationViews } from "./views/ApplicationViews";
 
@@ -22,7 +23,11 @@ export const App = () => {
           <ApplicationViews />
         </>
       ) : (
-        <Login setIsLoggedIn={setIsLoggedIn} />
+        <Routes>
+          <Route path="/" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="/signup" element={<CreateUserForm setIsLoggedIn={setIsLoggedIn} />} />
+          <Route path="*" element={<Login setIsLoggedIn={setIsLoggedIn} />} />
+        </Routes>
       )}
     </div>
   );

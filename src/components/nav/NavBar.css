@@ -26,7 +26,8 @@
 .navbar a {
   text-decoration: none;
   color: #ffffff;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: clamp(0.8rem, 2.5vw, 1rem);
 }
 
@@ -47,7 +48,15 @@
   /* min: 0.8rem, preferred: 2.5% of viewport width, max: 1.2rem */
   margin: 0;
   padding: 0.5rem;
-  padding-top: 1.2rem;
+  padding-top: 1.3rem;
+}
+
+.site-name {
+  font-size: 1.5rem;
+  /* min: 0.8rem, preferred: 2.5% of viewport width, max: 1.2rem */
+  margin: 0;
+  padding: 0.5rem;
+  padding-top: 0.9rem;
 }
 
 .logout-nav {
@@ -55,7 +64,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 0.25rem;
-  margin-right: 1rem
+  margin-right: 1rem;
 }
 
 .nav-user-img {
@@ -72,19 +81,20 @@
 }
 
 .nav-logout-btn {
-  background-color: #81B29A;
+  background-color: #81b29a;
   border: none;
-  color: #F4F1DE;
+  color: #f4f1de;
   border-radius: 5px;
-  padding: 0.25rem 0.5rem 0.25rem 0.5rem ;
+  padding: 0.25rem 0.5rem 0.25rem 0.5rem;
   /* box-shadow: 1px 1px 5px 1px #d5d3c2; */
   transition: background-color 0.3s ease;
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   margin-top: 0.5rem;
 }
 
 .nav-logout-btn:hover {
-  background-color: #E07A5F;
+  background-color: #e07a5f;
   color: #ffffff;
 }
 
@@ -107,6 +117,11 @@
   .nav-item {
     padding-top: 0rem;
   }
+
+  .site-name {
+    padding-top: 0rem;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.5rem 1.5rem;
+  }
 }
-
-

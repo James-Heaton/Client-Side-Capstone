@@ -99,6 +99,10 @@ form.edit-synth-fields textarea::placeholder {
   box-shadow: none;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (max-width: 838px) {
   .edit-synth {
     height: calc(100vh - 5rem); /* Adjust for taller navbar */

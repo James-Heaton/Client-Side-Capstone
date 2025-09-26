@@ -1,7 +1,9 @@
 import "./CreateSynth.css";
+import "../hooks/Toast.css"
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { addNewSynth, getCharacteristics } from "../../services/synthService";
+import { useToast, Toast } from "../hooks/Toast";
 
 export const CreateSynthForm = () => {
   const navigate = useNavigate();
@@ -34,6 +36,8 @@ export const CreateSynthForm = () => {
       yearMade: currentYear,
     }));
   }, []);
+
+  const { toast, showToast, hideToast } = useToast();
 
   const characteristicOptions = () => {
     return characteristics
@@ -180,16 +184,27 @@ export const CreateSynthForm = () => {
               newSynth.trackExample &&
               newSynth.description
             ) {
-              window.alert("Synth Created!");
+              // window.alert("Synth Created!");
+              showToast("Synth Created!", "success");
               handleCreateSynth(event);
             } else {
-              window.alert(`All fields required!`);
+              // window.alert(`All fields required!`);
+              showToast("All fields required!", "error");
             }
           }}
         >
           Create Synth
         </button>
       </form>
+      <div>
+        {toast && (
+          <Toast 
+          message={toast.message}
+          type={toast.type}
+          onClose={hideToast}
+          />
+        )}
+      </div>
     </>
   );
 };

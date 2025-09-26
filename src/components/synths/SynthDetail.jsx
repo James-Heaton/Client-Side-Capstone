@@ -1,18 +1,21 @@
 import { useEffect, useState } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { getSynthById } from "../../services/synthService";
 import {
   addUserSynths,
   getUserSynths,
   deleteUserSynth,
 } from "../../services/userService";
+import { useToast, Toast } from "../hooks/Toast";
 import "./SynthDetail.css";
+import "../hooks/Toast.css"
 
 export const SynthDetail = () => {
   const { synthId } = useParams();
   const [synth, setSynth] = useState({});
   const [currentUser, setCurrentUser] = useState({});
   const [userSynths, setUserSynths] = useState([]);
+  const { toast, showToast, hideToast } = useToast();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -78,7 +81,8 @@ export const SynthDetail = () => {
       const userSynthId = userSynthToDelete.id;
 
       deleteUserSynth(userSynthId).then(() => {
-        window.alert("Synth removed from collection.");
+        // window.alert("Synth removed from collection.");
+        showToast("Synth removed from collection.", "error")
         setUserSynths(userSynths.filter(userSynth => userSynth.id !== userSynthId))
       });
     }
@@ -91,7 +95,8 @@ export const SynthDetail = () => {
         synthId: synth.id,
       };
       addUserSynths(newUserSynth).then((res) => {
-        window.alert("Synth Added to Collection!");
+        // window.alert("Synth Added to Collection!");
+        showToast("Synth Added to Collection!", "success")
         setUserSynths([...userSynths, res])
       });
     }
@@ -137,6 +142,13 @@ export const SynthDetail = () => {
           </div>
         </div>
       </div>
+      {toast && (
+        <Toast
+          message={toast.message}
+          type={toast.type}
+          onClose={hideToast}
+        />
+      )}
     </div>
   );
 };

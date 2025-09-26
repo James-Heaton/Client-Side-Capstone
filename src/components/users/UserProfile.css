@@ -108,7 +108,8 @@
 }
 
 .no-synths-msg {
-  margin-left: 15rem;
+  margin-left: 1rem;
+  margin-right: 5rem;
   margin-top: 18rem;
   color: #ffffff;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

@@ -13,16 +13,65 @@
     font-size: x-large;
 }
 
-.save-changes-btn {
-  background-color: #81b29a;
+.sign-up-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 70%;
+  margin-top: 0.5rem;
+}
+
+.sign-up-back-btn {
+  background-color: #21212d;
   border: none;
-  color: #f4f1de;
+  color: #ffffff;
   border-radius: 5px;
   padding: 0.75rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 0.65rem;
   /* box-shadow: 1px 1px 5px 1px #d5d3c2; */
+  transition: background-color 0.3s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+
+.sign-up-back-btn:hover {
+  background-color: #e07a5f;
+  color: #ffffff;
+}
+
+.sign-up-btn {
+  background-color: #3d405b;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.65rem;
+  /* box-shadow: 1px 1px 5px 1px #d5d3c2; */
+  transition: background-color 0.3s ease;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: large;
+}
+
+.sign-up-btn:hover {
+  background-color: #e07a5f;
+  color: #ffffff;
+}
+
+.save-changes-btn {
+  background-color: #81b29a;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 0.65rem;
   transition: background-color 0.3s ease;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
@@ -56,7 +105,7 @@
   display: flex;
   padding: clamp(0.5rem, 2vw, 1rem);
   flex-direction: column;
-  line-height: 3rem;
+  line-height: 2rem;
   margin-top: 1rem;
   width: 95%;
   align-items: center;
@@ -99,9 +148,13 @@ form.edit-user-fields textarea::placeholder {
   box-shadow: none;
 }
 
+textarea {
+  resize: none;
+}
+
 @media (max-width: 838px) {
   .edit-user {
     height: calc(100vh - 5rem); /* Adjust for taller navbar */
-    margin-top: 17rem; /* Adjust for taller navbar */
+    margin-top: 17rem;
   }
 }
