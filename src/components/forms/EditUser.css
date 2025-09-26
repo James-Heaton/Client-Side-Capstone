@@ -170,9 +170,9 @@ textarea {
   resize: none;
 }
 
-/* @media (max-width: 838px) {
-  .edit-user {
+@media (max-width: 838px) {
+  #edit-user-mobile {
     height: calc(100vh - 5rem);
     margin-top: 17rem;
   }
-} */
+}
