@@ -29,12 +29,16 @@
   top: 25px;
 }
 
+.toast-closing {
+  animation: slideOut 0.3s ease forwards;
+}
+
 @keyframes slideIn {
   from { transform: translateX(100%); opacity: 0; }
   to { transform: translateX(0); opacity: 1; }
 }
 
-/* @keyframes slideOut {
+@keyframes slideOut {
   from { transform: translateX(0); opacity: 1; }
   to { transform: translateX(100%); opacity: 0; }
-} */
+}

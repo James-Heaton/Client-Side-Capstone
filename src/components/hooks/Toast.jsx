@@ -1,18 +1,31 @@
 import { useState, useEffect, useCallback } from "react";
 
-export const Toast = ({ message, type = 'success', duration = 3000, onClose, customClass }) => {
+export const Toast = ({ message, type = 'success', duration = 2500, onClose, customClass }) => {
+    const [isClosing, setIsClosing] = useState(false)
+
     useEffect(() => {
         const timer = setTimeout(() => {
-            onClose();
-        }, duration)
+            setIsClosing(true);
+
+            setTimeout(() => {
+                onClose();
+            }, 300)
+        }, duration);
 
         return () => clearTimeout(timer);
-    }, [duration, onClose])
+    }, [duration, onClose]);
+
+    const handleManualClose = () => {
+        setIsClosing(true);
+        setTimeout(() => {
+            onClose();
+        }, 300);
+    }
 
     return (
-        <div className={`toast toast-${type} ${customClass || ''}`}>
+        <div className={`toast toast-${type} ${isClosing ? 'toast-closing' : ''} ${customClass || ''}`}>
             <span>{message}</span>
-            <button onClick={onClose} className="toast-close">x</button>
+            <button onClick={handleManualClose} className="toast-close">x</button>
         </div>
     ); 
 };
