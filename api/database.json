@@ -153,7 +153,7 @@
     {
       "id": 21,
       "name": "Otis King",
-      "bio": "King of R&B. My new song “Triple Check” is available at record stores nationwide.",
+      "bio": "King of R&B. My new single “Triple Check” is available at record stores nationwide.",
       "email": "oking@nss.com",
       "imgUrl": "https://static01.nyt.com/images/2021/04/30/obituaries/24Oscher/merlin_186722856_3636af9d-9526-4e77-8858-d8e629d25171-mediumSquareAt3X.jpg",
       "password": "SynthFolioPassword"
@@ -195,8 +195,8 @@
       "name": "Nuno Gloop",
       "bio": "I specialize in viscous liquid distribution and have strong opinions about consistency.",
       "email": "ngloop@nss.com",
-      "imgUrl": "https://randomuser.me/api/portraits/women/48.jpg",
-      "password": "SynthFolioPassword"
+      "password": "SynthFolioPassword",
+      "imgUrl": "https://randomuser.me/api/portraits/women/48.jpg"
     },
     {
       "id": 27,
@@ -237,6 +237,14 @@
       "email": "bfrik@nss.com",
       "imgUrl": "https://hips.hearstapps.com/hmg-prod/images/b5ayuu6ewuk41-1588687531.png?crop=0.4185851820845542xw:1xh;center,top&resize=1200:*",
       "password": "SynthFolioPassword"
+    },
+    {
+      "id": 32,
+      "name": "Miso",
+      "bio": "i am a chiwawa. welcome to make friend with me",
+      "email": "miso@gmail.com",
+      "password": "1234",
+      "imgUrl": "https://i.pinimg.com/736x/be/e6/e6/bee6e605c51ef4c40c86082b7e2a8043.jpg"
     }
   ],
   "synths": [
@@ -449,6 +457,16 @@
       "yearMade": 2025,
       "imgUrl": "https://m.media-amazon.com/images/I/619qtTKWlHL.jpg",
       "trackExample": "\"Meow Mix Theme\" by Tom and The Jerries\""
+    },
+    {
+      "name": "Super Box",
+      "userId": 32,
+      "characteristicId": 6,
+      "description": "Most magical box ever.",
+      "yearMade": 2025,
+      "imgUrl": "https://media.sweetwater.com/m/products/image/bcf3365655sVDX7zhmyjOIuWQryhGVg3icVSDmR3.jpg?quality=82&width=750&ha=bcf33656557653e8",
+      "trackExample": "\"Magic Box\" by Miso The Dog",
+      "id": 22
     }
   ],
   "characteristics": [
@@ -1355,11 +1373,6 @@
     },
     {
       "userId": 11,
-      "synthId": 18,
-      "id": 182
-    },
-    {
-      "userId": 11,
       "synthId": 20,
       "id": 183
     },
@@ -1367,6 +1380,41 @@
       "userId": 11,
       "synthId": 1,
       "id": 184
+    },
+    {
+      "userId": 11,
+      "synthId": 18,
+      "id": 185
+    },
+    {
+      "userId": 32,
+      "synthId": 21,
+      "id": 186
+    },
+    {
+      "userId": 32,
+      "synthId": 22,
+      "id": 187
+    },
+    {
+      "userId": 32,
+      "synthId": 2,
+      "id": 188
+    },
+    {
+      "userId": 32,
+      "synthId": 18,
+      "id": 189
+    },
+    {
+      "userId": 32,
+      "synthId": 12,
+      "id": 190
+    },
+    {
+      "userId": 32,
+      "synthId": 15,
+      "id": 191
     }
   ]
 }

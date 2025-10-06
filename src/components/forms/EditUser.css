@@ -121,6 +121,11 @@
   margin-bottom: 1rem;
 }
 
+.edit-user-fields textarea {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
 .edit-user-fields input,
 .edit-user-fields textarea,
 .edit-user-fields select {
